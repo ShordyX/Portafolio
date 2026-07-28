@@ -1,48 +1,50 @@
+# **¡Hola\! Soy Shordy 👋**
 
-# **Shordy | Ingeniería de Software B2B & IA 🚀**
+> *«La tecnología no se trata solo de computadoras o código; se trata de hacerle la vida más fácil a las personas y transformar ideas en soluciones reales.»*
 
-Bienvenido al repositorio oficial de mi portafolio profesional y plataforma de servicios. Este proyecto representa la convergencia entre el desarrollo de software tradicional de alto nivel y las capacidades disruptivas de la Inteligencia Artificial para el sector B2B.
+## **🌱 ¿Quién soy?**
 
-## **📌 Sobre el Proyecto**
+Soy estudiante de **Ingeniería en Sistemas Computacionales en UTEL** (Quito, Ecuador) y creador de herramientas digitales.
 
-Esta plataforma ha sido diseñada bajo una estética **SaaS Premium**, priorizando la usabilidad, la velocidad de carga y una arquitectura limpia. No es solo un portafolio; es una herramienta de conversión para soluciones tecnológicas complejas, desde el desarrollo de software a medida hasta el mantenimiento crítico de infraestructura física.
+Para mí, las computadoras y la informática son aliadas del día a día. Me apasiona tomar problemas confusos o tareas que quitan mucho tiempo y convertirlas en procesos sencillos, rápidos y amigables.
 
-### **Características Principales:**
+Más allá de lo técnico, me muevo por valores claros: **compromiso, responsabilidad, trabajo en equipo y empatía**. Me gusta involucrarme de corazón en lo que hago, ponerme la camiseta del proyecto y dar la tranquilidad de que las cosas se harán bien desde el primer día.
 
-* **Arquitectura Adaptativa:** Layout totalmente responsive diseñado para cualquier dispositivo (Mobile-First).  
-* **HUD Navbar:** Sistema de navegación flotante estilo píldora con desenfoque de fondo (glassmorphism).  
-* **Gestión de Credenciales:** Carrusel interactivo con sistema de Lightbox para la visualización de certificaciones técnicas.  
-* **AI-Enhanced Development:** Flujos de trabajo optimizados mediante ingeniería de prompts para asegurar un código robusto y eficiente.  
-* **Sección de Soporte IT:** Módulo dedicado a servicios de hardware y optimización de sistemas operativos.
+## **🏆 Mis Proyectos y Logros Destacados**
 
-## **🛠️ Stack Tecnológico**
+Aquí hay algunos ejemplos de ideas que he transformado en realidad:
 
-El ecosistema de desarrollo de este proyecto y los servicios ofrecidos se basan en:
+### **1\. WhatsApp Life — *Ahorro de tiempo y comunicación fluida***
 
-* **Backend & Lógica:** \* **Java:** Utilizado para la estructuración de arquitecturas sólidas y escalables en soluciones empresariales.  
-* **Frontend:** \* **HTML5 & CSS3:** Uso extensivo de variables CSS y Flexbox/Grid para un diseño moderno.  
-  * **Vanilla JavaScript:** Lógica de componentes, animaciones de scroll (Reveal) y gestión del carrusel sin dependencias externas.  
-* **Diseño & UI:** \* **Tipografía Inter:** Optimizada para legibilidad en interfaces de software.  
-  * **Animaciones Fluidas:** Implementación de @keyframes para una experiencia de usuario dinámica.
+* **¿Qué es?** Una herramienta pensada para simplificar la comunicación masiva y organizada sin complicarle la vida al usuario.  
+* **Impacto:** Permite enviar textos, imágenes y documentos en secuencia de forma ordenada, respetando pausas naturales de tiempo para que los mensajes se sientan orgánicos y humanos.
 
-## **📂 Estructura del Repositorio**
+### **2\. Asistente "NubIA" — *Liderazgo en el Hackathon UTEL & Tiendanube (2026)***
 
-├── index.html          \# Archivo principal (Estructura, Estilos y Lógica JS)  
-├── imagenes/           \# Activos visuales y certificados  
-└── README.md           \# Documentación del proyecto
+* **¿Qué fue?** Un reto intensivo donde asumí el liderazgo de un equipo integrado por personas de diseño, negocios e infraestructura.  
+* **Impacto:** Coordiné y guié la creación de **"NubIA"**, un asistente virtual diseñado para acompañar y guiar a emprendedores en el mundo digital. Fue una prueba clave de trabajo bajo presión, organización e iniciativa.
 
-## **👨‍💻 Perfil del Desarrollador**
+### **3\. Digitalización Histórica — *Ministerio del Ambiente (MAATE)***
 
-**Shordy** \- Próximo Ingeniero en Sistemas (Octubre 2026).
+* **¿Qué fue?** Un proyecto de 4 meses enfocado en rescatar y organizar el archivo histórico de la institución.  
+* **Impacto:** Transformamos montañas de documentos físicos (algunos con fechas desde 1850\) en una base de datos digital clara y fácil de consultar, asegurando la preservación del patrimonio y la memoria histórica.
 
-Especialista en desarrollo potenciado por IA y soluciones B2B. Mi enfoque se centra en multiplicar la productividad y entregar software de altísima calidad en tiempo récord, utilizando la IA como copiloto estratégico en cada línea de código.
+## **🎓 Aprendizaje Continuo & Capacitaciones**
 
-## **📩 Contacto**
+Me encanta aprender de manera constante en diversas áreas para tener una visión amplia y humana de la tecnología:
 
-¿Tienes un proyecto en mente o necesitas consultoría técnica?
+* 🎓 **Ingeniería en Sistemas Computacionales** — UTEL Universidad *(En curso)*  
+* 🔍 **SEO para IA y Google** — BIG School / BIGSEO *(2026)*  
+* 💡 **Innovación y E-commerce** — Hackathon UTEL & Tiendanube *(2026)*  
+* 🕵️ **Informática Forense** — Academia Progenios *(2025)*  
+* 🤝 **Customer Experience (Atención y Experiencia al Cliente)** — Remotos Academy / CertiProf *(2025)*  
+* 🌿 **Gestión de Residuos Electrónicos (RAEE I y II)** — Ministerio del Ambiente *(2025)*  
+* 🦾 **Introducción a Prótesis Biónicas** — P4H Bionics *(2024)*
 
-* **Email:** [shordy46.58@gmail.com](mailto:shordy46.58@gmail.com)  
-* **WhatsApp:** [\+593 98 418 2834](https://wa.me/593984182834)  
-* **LinkedIn:** \[https://www.linkedin.com/in/shordy/]
+## **🤝 Conectemos**
 
-Desarrollado con precisión por **Shordy | LycodeLife**.
+Si te interesa conversar sobre proyectos, compartir ideas o colaborar en algo nuevo, estaré encantado de conectar contigo:
+
+* **LinkedIn:** [linkedin.com/in/shordy](https://www.linkedin.com/in/shordy/)
+
+*Orgullosamente impulsado con dedicación desde Quito, Ecuador 🇪🇨*
