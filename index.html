@@ -6,14 +6,18 @@
     
     <!-- === OPTIMIZACIÓN SEO AVANZADA === -->
     <title>Shordy | Portafolio Digital</title>
-    <meta name="description" content="Portafolio digital de Shordy Anderson Simbaña Vega, desarrollador de software y estudiante de Ingeniería en Sistemas en Quito, Ecuador.">
+    <meta name="description" content="Portafolio de Shordy Anderson Simbaña Vega, desarrollador de software y estudiante de Ingeniería en Sistemas en Quito, Ecuador.">
     <meta name="keywords" content="Shordy, Shordy Simbaña, Shordy Anderson Simbaña Vega, Desarrollador de software, Programador, Portafolio, LyCodeLife, Ecuador, Quito">
     <meta name="author" content="Shordy Anderson Simbaña Vega">
-    <meta name="theme-color" content="#040d0a">
+    <meta name="theme-color" content="#f5f4ee">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imagenes/favicon.png">
+    <link rel="apple-touch-icon" href="imagenes/favicon.png">
     
     <!-- === OPTIMIZACIÓN PARA REDES SOCIALES (Open Graph) === -->
     <meta property="og:title" content="Shordy | Portafolio Digital">
-    <meta property="og:description" content="Portafolio digital y proyectos de desarrollo de software de Shordy Simbaña.">
+    <meta property="og:description" content="Portafolio personal y proyectos de desarrollo de software de Shordy Simbaña.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://shordyea.github.io/">
     <meta property="og:image" content="https://shordyea.github.io/imagenes/perfil.png"> 
@@ -64,52 +68,61 @@
       "@type": "FAQPage",
       "mainEntity": [{
         "@type": "Question",
-        "name": "¿Qué diferencia a LyCodeLife de las demás agencias de desarrollo?",
+        "name": "¿Qué diferencia a LyCodeLife de otras opciones de desarrollo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Trabajamos de manera responsable, directa y desarrollamos herramientas de software personalizadas exclusivamente para tus necesidades. No usamos plantillas genéricas; analizamos tu modelo de negocio y construimos soluciones a medida que resuelven problemas reales."
+          "text": "La diferencia está en la cercanía y el compromiso. No vendo plantillas armadas ni soluciones genéricas. Me siento a entender cómo trabajas en el día a día para crear un software a la medida exacta de tus necesidades, con código limpio y sin sorpresas."
         }
       }, {
         "@type": "Question",
-        "name": "¿Cómo puede la automatización mejorar mi empresa?",
+        "name": "¿Cómo me ayuda la automatización en mi negocio?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "En LyCodeLife creamos flujos de automatización que eliminan tareas manuales repetitivas. Esto permite procesar datos en segundos, optimizar la atención al cliente y reducir costos operativos, liberando tiempo para que tu equipo se enfoque en el trabajo más importante."
+          "text": "Te quita de encima las tareas aburridas y repetitivas que consumen horas: pasar datos de un archivo a otro, mandar mensajes manuales o armar reportes. Al automatizarlo, ahorras tiempo, evitas equivocaciones por cansancio y puedes concentrarte en atender mejor a tus clientes."
         }
       }, {
         "@type": "Question",
-        "name": "¿Qué tipo de empresas se benefician de sus servicios de software a medida?",
+        "name": "¿Qué tipo de proyectos o negocios pueden trabajar contigo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ayudamos principalmente a pymes, startups y empresas tradicionales que buscan la transformación digital, desarrollando desde plataformas web y sistemas de gestión interna hasta integraciones de API."
+          "text": "Desde pequeños negocios y emprendedores que quieren dar el salto a lo digital, hasta empresas que necesitan ordenar sus sistemas internos, bases de datos o integrar distintas herramientas web."
         }
       }, {
         "@type": "Question",
-        "name": "¿Cuánto tiempo toma construir una solución tecnológica personalizada?",
+        "name": "¿Cuánto tiempo toma tener listo un proyecto?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "El cronograma depende de la complejidad de la herramienta tecnológica. Sin embargo, aplicamos metodologías ágiles que nos permiten lanzar un Producto Mínimo Viable (MVP) funcional en pocas semanas."
+          "text": "Depende de lo que necesites, pero mi enfoque es entregarte resultados funcionales desde las primeras semanas. Prefiero que tengas una versión base lista para usar y probar rápido, antes que hacerte esperar meses por una entrega final."
         }
       }, {
         "@type": "Question",
-        "name": "¿Ofrecen soporte continuo y optimización de hardware después del desarrollo?",
+        "name": "¿Das soporte y ayuda técnica después de terminar el desarrollo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí. Entendemos que el software necesita una base sólida. Además del desarrollo de la aplicación, brindamos mantenimiento continuo, soporte técnico y optimización de infraestructura de hardware para garantizar que tu ecosistema digital sea seguro y rápido."
+          "text": "Totalmente. El software no se abandona cuando se entrega. Ofrezco acompañamiento para resolver dudas, realizar ajustes con el uso y revisar que tus computadoras y servidores funcionen estables y seguros."
         }
       }]
     }
     </script>
 
     <style>
-        /* === PALETA MINIMALISTA Y VARIABLES (Verde Jade Original) === */
+        /* === PALETA ESTRICTA DE 3 COLORES ===
+           1. Blanco Hueso: #f5f4ee
+           2. Azul Marino Profundo: #0a192f
+           3. Azul Vibrante: #1d63ff
+        ======================================= */
         :root {
-            --bg-page: #040d0a; /* Fondo casi negro con toque Jade */
-            --text-main: #ffffff; /* Blanco puro para máxima legibilidad */
-            --text-muted: #94a3b8; /* Gris azulado/jade suave para textos secundarios */
-            --accent: #10b981; /* Verde Jade brillante */
-            --surface: rgba(16, 185, 129, 0.03); /* Superficie casi invisible */
-            --surface-hover: rgba(16, 185, 129, 0.08); /* Hover sutil */
+            --color-bone: #f5f4ee;
+            --color-navy: #0a192f;
+            --color-blue: #1d63ff;
+
+            --bg-page: var(--color-bone);
+            --text-main: var(--color-navy);
+            --text-muted: rgba(10, 25, 47, 0.65);
+            --accent: var(--color-blue);
+            --surface: rgba(29, 99, 255, 0.04);
+            --surface-hover: rgba(29, 99, 255, 0.08);
+            --border-subtle: rgba(10, 25, 47, 0.1);
             --radius-lg: 32px;
             --radius-md: 24px;
             --radius-sm: 16px;
@@ -129,11 +142,20 @@
             position: relative;
         }
 
-        /* === FONDOS ORBES (Efecto Cristal sin bordes) === */
+        /* === FONDOS ORBES Y LIENZO ANTIGRAVITY === */
+        #antigravity-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -2;
+            pointer-events: none;
+        }
         .bg-orbs { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -3; overflow: hidden; pointer-events: none; }
-        .orb { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.5; mix-blend-mode: screen; }
-        .orb-1 { width: 600px; height: 600px; background: rgba(16, 185, 129, 0.15); top: -150px; left: -150px; }
-        .orb-2 { width: 700px; height: 700px; background: rgba(5, 150, 105, 0.1); bottom: -250px; right: -150px; }
+        .orb { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.6; mix-blend-mode: multiply; }
+        .orb-1 { width: 600px; height: 600px; background: rgba(29, 99, 255, 0.12); top: -150px; left: -150px; }
+        .orb-2 { width: 700px; height: 700px; background: rgba(10, 25, 47, 0.06); bottom: -250px; right: -150px; }
 
         a { text-decoration: none; color: inherit; }
 
@@ -143,9 +165,10 @@
             top: 0;
             width: 290px;
             height: 100vh;
-            background: rgba(4, 13, 10, 0.8);
+            background: rgba(245, 244, 238, 0.85);
             backdrop-filter: blur(30px);
             -webkit-backdrop-filter: blur(30px);
+            border-right: 1px solid var(--border-subtle);
             padding: 40px 24px;
             display: flex;
             flex-direction: column;
@@ -164,7 +187,8 @@
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 16px;
-            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.6);
+            box-shadow: 0 15px 35px rgba(10, 25, 47, 0.15);
+            border: 2px solid rgba(29, 99, 255, 0.2);
         }
 
         .hud-profile h2 {
@@ -172,6 +196,7 @@
             font-weight: 800;
             letter-spacing: -0.03em;
             margin-bottom: 8px;
+            color: var(--text-main);
         }
 
         .hud-profile p {
@@ -201,7 +226,7 @@
 
         .hud-nav a:hover {
             background: var(--surface-hover);
-            color: var(--text-main);
+            color: var(--accent);
             transform: translateX(8px);
         }
 
@@ -226,16 +251,16 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 300px;
+            height: 320px;
             object-fit: cover;
             z-index: -1;
-            opacity: 0.25;
-            mix-blend-mode: lighten;
-            -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
-            mask-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            opacity: 0.22;
+            mix-blend-mode: multiply;
+            filter: contrast(1.05) saturate(1.15);
+            -webkit-mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.3) 10%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,0.3) 80%, transparent 100%);
+            mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.3) 10%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,0.3) 80%, transparent 100%);
             pointer-events: none;
         }
-
         .social-links {
             display: flex;
             justify-content: center;
@@ -293,20 +318,21 @@
             background-size: cover;
             background-position: center;
             z-index: -2;
-            opacity: 0.15; 
-            filter: grayscale(80%) sepia(20%) hue-rotate(100deg);
+            opacity: 0.05; 
+            filter: grayscale(100%);
         }
 
         .hero-bg-gradient {
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to bottom, rgba(4,13,10,0.2) 0%, rgba(4,13,10,1) 100%);
+            background: linear-gradient(to bottom, rgba(245,244,238,0.2) 0%, rgba(245,244,238,1) 100%);
             z-index: -1;
         }
 
         .hero-photo-main {
             width: 160px; height: 160px; border-radius: 50%; object-fit: cover;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 20px 50px rgba(10, 25, 47, 0.15);
+            border: none;
             margin-bottom: 32px;
         }
 
@@ -342,21 +368,21 @@
             display: flex;
             align-items: center;
             gap: 24px;
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
-            border: 1px solid rgba(16, 185, 129, 0.2);
+            background: rgba(245, 244, 238, 0.7);
+            border: 1px solid rgba(29, 99, 255, 0.25);
             padding: 24px;
             border-radius: var(--radius-lg);
             max-width: 100%;
             text-align: left;
             backdrop-filter: blur(12px);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+            box-shadow: 0 20px 40px rgba(10, 25, 47, 0.06);
             transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
             margin-bottom: 40px;
         }
         .hero-cta-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 40px 80px rgba(16, 185, 129, 0.15);
-            border-color: rgba(16, 185, 129, 0.4);
+            box-shadow: 0 25px 50px rgba(29, 99, 255, 0.15);
+            border-color: var(--accent);
         }
         .hero-cta-card img {
             width: 160px;
@@ -364,8 +390,8 @@
             border-radius: var(--radius-md);
             object-fit: contain;
             flex-shrink: 0;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-            background: rgba(0, 0, 0, 0.2); /* Le da un fondo sutil si el logo tiene transparencia */
+            box-shadow: 0 8px 20px rgba(10, 25, 47, 0.08);
+            background: rgba(10, 25, 47, 0.04);
         }
         .hero-cta-content h3 {
             font-size: 1.3rem;
@@ -386,35 +412,42 @@
             gap: 8px;
             padding: 12px 28px;
             background: var(--text-main);
-            color: #000;
+            color: var(--bg-page);
             font-weight: 800;
             font-size: 0.95rem;
             border-radius: 100px;
             text-decoration: none;
             transition: all 0.3s ease;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 5px 15px rgba(10, 25, 47, 0.15);
+            border: none;
+            cursor: pointer;
         }
         .btn-glow:hover {
             transform: scale(1.05);
             background: var(--accent);
-            color: #000;
-            box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+            color: var(--bg-page);
+            box-shadow: 0 8px 25px rgba(29, 99, 255, 0.35);
         }
 
         /* === SECCIONES GLOBALES === */
         .section { margin-bottom: 120px; }
         .section-header { margin-bottom: 50px; text-align: center; }
-        .section-title { font-size: 2.5rem; font-weight: 800; letter-spacing: -0.04em; margin-bottom: 12px; }
+        .section-title { font-size: 2.5rem; font-weight: 800; letter-spacing: -0.04em; margin-bottom: 12px; color: var(--text-main); }
         .section-subtitle { color: var(--text-muted); font-size: 1.15rem; font-weight: 400; max-width: 600px; margin: 0 auto;}
 
         /* === SOBRE MI === */
         .about-card {
-            background: rgba(16, 185, 129, 0.05);
+            background: rgba(245, 244, 238, 0.94);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-subtle);
             border-left: 4px solid var(--accent);
             border-radius: var(--radius-lg);
             padding: 50px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 35px rgba(10, 25, 47, 0.04);
             margin-bottom: 80px;
+            position: relative;
+            z-index: 1;
         }
         .about-card h2 { font-size: 1.8rem; font-weight: 800; margin-bottom: 16px; color: var(--text-main); }
         .about-card p { font-size: 1.15rem; color: var(--text-muted); line-height: 1.8; }
@@ -428,25 +461,26 @@
         }
 
         .bento-item {
-            background: rgba(255, 255, 255, 0.02);
+            background: rgba(245, 244, 238, 0.7);
+            border: 1px solid var(--border-subtle);
             border-radius: var(--radius-lg);
             padding: 48px 40px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 30px rgba(10, 25, 47, 0.03);
             position: relative;
             overflow: hidden;
         }
 
         .bento-item::before {
             content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(16, 185, 129, 0.06), transparent 40%);
+            background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(29, 99, 255, 0.08), transparent 40%);
             opacity: 0; transition: opacity 0.5s; z-index: 0; pointer-events: none;
         }
 
-        .bento-item:hover { transform: translateY(-8px); background: rgba(255, 255, 255, 0.04); }
+        .bento-item:hover { transform: translateY(-8px); background: rgba(245, 244, 238, 0.95); border-color: rgba(29, 99, 255, 0.3); }
         .bento-item:hover::before { opacity: 1; }
 
         .bento-item > * { z-index: 1; position: relative; }
@@ -463,9 +497,10 @@
             gap: 24px;
             flex-wrap: wrap;
             padding: 40px;
-            background: rgba(255,255,255,0.02);
+            background: rgba(245, 244, 238, 0.6);
+            border: 1px solid var(--border-subtle);
             border-radius: var(--radius-lg);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 30px rgba(10, 25, 47, 0.03);
             margin-top: 40px;
         }
 
@@ -473,12 +508,12 @@
             width: 55px;
             height: 55px;
             transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
-            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+            filter: drop-shadow(0 4px 6px rgba(10, 25, 47, 0.1));
         }
 
         .tech-icon:hover {
             transform: translateY(-8px) scale(1.15);
-            filter: drop-shadow(0 10px 15px rgba(16, 185, 129, 0.4));
+            filter: drop-shadow(0 10px 15px rgba(29, 99, 255, 0.3));
         }
 
         /* === CERTIFICADOS === */
@@ -499,97 +534,97 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(255,255,255,0.02);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            background: rgba(245, 244, 238, 0.7);
+            border: 1px solid var(--border-subtle);
+            box-shadow: 0 10px 20px rgba(10, 25, 47, 0.03);
             gap: 16px; 
         }
 
-        /* MINIATURAS DE CERTIFICADOS CON ESQUINAS REDONDAS */
         .cert-thumb {
             display: none; 
             width: 70px;
             height: 50px;
-            border-radius: 10px; /* Esquinas redondas */
+            border-radius: 10px;
             object-fit: cover;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            box-shadow: 0 4px 10px rgba(10, 25, 47, 0.1);
             flex-shrink: 0;
             transition: all 0.4s ease;
         }
 
         .cert-item:hover, .cert-item.active {
-            background: rgba(16, 185, 129, 0.05);
+            background: rgba(29, 99, 255, 0.05);
+            border-color: rgba(29, 99, 255, 0.3);
             transform: translateX(12px);
         }
 
-        /* RESPLANDOR LLAMATIVO PARA MINIATURA ACTIVA/HOVER */
         .cert-item:hover .cert-thumb, .cert-item.active .cert-thumb {
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5), 0 0 15px rgba(16, 185, 129, 0.3);
-            border: 1px solid rgba(16, 185, 129, 0.4);
+            box-shadow: 0 4px 15px rgba(10, 25, 47, 0.15), 0 0 15px rgba(29, 99, 255, 0.2);
+            border: 1px solid rgba(29, 99, 255, 0.4);
         }
 
         .cert-info h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 6px; color: var(--text-main); }
         .cert-info p { font-size: 0.95rem; color: var(--text-muted); }
         .cert-year {
             font-size: 0.9rem; font-weight: 700; color: var(--accent);
-            background: rgba(16, 185, 129, 0.1); padding: 8px 16px; border-radius: 100px;
+            background: rgba(29, 99, 255, 0.1); padding: 8px 16px; border-radius: 100px;
         }
 
         .cert-preview-area {
             position: sticky; top: 40px;
-            background: rgba(0,0,0,0.2); 
+            background: rgba(10, 25, 47, 0.03); 
+            border: 1px solid var(--border-subtle);
             border-radius: var(--radius-lg); padding: 20px; aspect-ratio: 4/3;
             display: flex; align-items: center; justify-content: center; overflow: hidden;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.5); cursor: zoom-in;
+            box-shadow: 0 20px 40px rgba(10, 25, 47, 0.06); cursor: zoom-in;
         }
 
-        /* IMAGEN DE VISTA PREVIA: ESQUINAS REDONDAS Y RESPLANDOR */
         .cert-preview-img { 
             width: auto; 
             height: auto; 
             max-width: 95%; 
             max-height: 95%;
             object-fit: contain; 
-            border-radius: 16px; /* Esquinas redondas */
-            border: 1px solid rgba(16, 185, 129, 0.2); /* Borde sutil jade */
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 25px rgba(16, 185, 129, 0.15); /* Resplandor llamativo pero suave */
+            border-radius: 16px;
+            border: 1px solid rgba(29, 99, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(10, 25, 47, 0.1), 0 0 25px rgba(29, 99, 255, 0.1);
             transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease; 
         }
         
         .cert-preview-area:hover .cert-preview-img { 
             transform: scale(1.03); 
-            box-shadow: 0 15px 40px rgba(0,0,0,0.6), 0 0 40px rgba(16, 185, 129, 0.3); /* Resplandor más fuerte en hover */
+            box-shadow: 0 15px 40px rgba(10, 25, 47, 0.15), 0 0 40px rgba(29, 99, 255, 0.25);
         }
 
         .btn-more-certs {
             margin-top: 16px; width: 100%; text-align: center; padding: 20px;
             font-size: 1rem; font-weight: 600; color: var(--text-muted); cursor: pointer;
-            background: rgba(255,255,255,0.02); 
-            border: none;
+            background: rgba(245, 244, 238, 0.6); 
+            border: 1px solid var(--border-subtle);
             border-radius: var(--radius-md); transition: all 0.3s;
         }
-        .btn-more-certs:hover { background: rgba(255,255,255,0.05); color: var(--text-main); transform: translateY(-2px); }
+        .btn-more-certs:hover { background: rgba(29, 99, 255, 0.05); color: var(--accent); border-color: rgba(29, 99, 255, 0.3); transform: translateY(-2px); }
 
         /* === TESTIMONIOS (REVIEWS) === */
         .reviews-container { display: flex; justify-content: center; width: 100%; }
         .review-card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(16, 185, 129, 0.1);
+            background: rgba(245, 244, 238, 0.8);
+            border: 1px solid var(--border-subtle);
             border-radius: var(--radius-lg);
             padding: 40px;
             max-width: 600px;
             width: 100%;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 35px rgba(10, 25, 47, 0.04);
             text-align: left;
             position: relative;
         }
-        .review-stars { color: #facc15; font-size: 1.4rem; margin-bottom: 16px; letter-spacing: 2px;}
+        .review-stars { color: var(--accent); font-size: 1.4rem; margin-bottom: 16px; letter-spacing: 2px;}
         .review-text { font-size: 1.15rem; color: var(--text-main); line-height: 1.7; font-style: italic; margin-bottom: 32px; font-weight: 500;}
         .review-author { display: flex; align-items: center; gap: 16px; }
-        .review-avatar { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
+        .review-avatar { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent); }
         
         .review-author-info strong { font-size: 1.1rem; color: var(--text-main); margin-bottom: 2px; display: block;}
         .review-author-info span { font-size: 0.9rem; color: var(--text-muted);}
-        .google-icon { position: absolute; top: 40px; right: 40px; width: 24px; opacity: 0.5; }
+        .google-icon { position: absolute; top: 40px; right: 40px; width: 24px; color: var(--accent); opacity: 0.8; }
 
         /* === FAQ / PREGUNTAS FRECUENTES === */
         .faq-container {
@@ -600,15 +635,15 @@
             gap: 16px;
         }
         .faq-item {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(16, 185, 129, 0.1);
+            background: rgba(245, 244, 238, 0.7);
+            border: 1px solid var(--border-subtle);
             border-radius: var(--radius-sm);
             overflow: hidden;
             transition: all 0.3s ease;
         }
         .faq-item:hover {
-            border-color: rgba(16, 185, 129, 0.3);
-            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(29, 99, 255, 0.3);
+            background: rgba(29, 99, 255, 0.03);
         }
         .faq-summary {
             padding: 24px;
@@ -639,27 +674,236 @@
             line-height: 1.7;
         }
 
+        /* === PROYECTO DESTACADO TOP (DANIKA) === */
+        .project-card-featured {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: rgba(245, 244, 238, 0.94);
+            border: 1.5px solid rgba(29, 99, 255, 0.35);
+            border-radius: var(--radius-lg);
+            padding: 48px 40px;
+            box-shadow: 0 20px 45px rgba(10, 25, 47, 0.06), 0 0 30px rgba(29, 99, 255, 0.06);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+        }
+        .project-card-featured:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent);
+            box-shadow: 0 25px 50px rgba(10, 25, 47, 0.09), 0 0 40px rgba(29, 99, 255, 0.12);
+        }
+        .featured-logo {
+            width: 160px;
+            height: 160px;
+            border-radius: 32px;
+            object-fit: contain;
+            box-shadow: 0 15px 35px rgba(10, 25, 47, 0.12);
+            border: none;
+            background: transparent;
+            margin-bottom: 24px;
+        }
+        .featured-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--text-main);
+            letter-spacing: -0.03em;
+            margin-bottom: 6px;
+        }
+        .featured-subtitle {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 24px;
+        }
+        .featured-desc-box {
+            max-width: 900px;
+            text-align: left;
+            margin-bottom: 36px;
+            width: 100%;
+        }
+        .featured-desc-box ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .featured-desc-box li {
+            position: relative;
+            padding-left: 24px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        .featured-desc-box li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 1.1rem;
+        }
+        .featured-desc-box li strong {
+            color: var(--text-main);
+            font-weight: 600;
+            margin-right: 4px;
+        }
+        .featured-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            width: 100%;
+            margin-bottom: 32px;
+        }
+        .featured-gallery-item {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(10, 25, 47, 0.08);
+            border: 1px solid var(--border-subtle);
+            background: rgba(10, 25, 47, 0.03);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .featured-gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+            cursor: zoom-in;
+        }
+        .featured-gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .featured-video-section {
+            width: 100%;
+            margin-bottom: 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .featured-section-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .video-card {
+            position: relative;
+            width: 100%;
+            max-width: 680px;
+            aspect-ratio: 16/9;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border-subtle);
+            box-shadow: 0 15px 35px rgba(10, 25, 47, 0.08);
+            background: rgba(10, 25, 47, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .video-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 45px rgba(29, 99, 255, 0.2);
+        }
+        .video-thumb {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+        .video-card:hover .video-thumb {
+            transform: scale(1.03);
+            filter: brightness(0.92);
+        }
+        .video-play-btn {
+            position: absolute;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: rgba(10, 25, 47, 0.85);
+            backdrop-filter: blur(8px);
+            border: 2px solid var(--accent);
+            color: var(--color-bone);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(10, 25, 47, 0.3);
+            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+        }
+        .video-play-btn svg {
+            margin-left: 3px;
+        }
+        .video-card:hover .video-play-btn {
+            transform: scale(1.15);
+            background: var(--accent);
+            color: var(--bg-page);
+            box-shadow: 0 0 30px rgba(29, 99, 255, 0.5);
+        }
+        .featured-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        @media (max-width: 800px) {
+            .featured-gallery {
+                grid-template-columns: 1fr;
+            }
+            .project-card-featured {
+                padding: 32px 20px;
+            }
+            .featured-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+            .featured-actions a {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
         /* === PROYECTOS === */
         .project-card {
             display: grid;
             grid-template-columns: 1fr 1.5fr;
             gap: 32px;
-            background: rgba(255, 255, 255, 0.02);
+            background: rgba(245, 244, 238, 0.8);
+            border: 1px solid var(--border-subtle);
             border-radius: var(--radius-lg);
             padding: 32px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-            transition: transform 0.4s ease;
+            box-shadow: 0 15px 35px rgba(10, 25, 47, 0.04);
+            transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
             align-items: center;
         }
         .project-card:hover {
             transform: translateY(-8px);
-            background: rgba(255, 255, 255, 0.04);
+            background: rgba(245, 244, 238, 0.95);
+            border-color: rgba(29, 99, 255, 0.3);
+            box-shadow: 0 20px 40px rgba(10, 25, 47, 0.08);
         }
         .project-img-wrapper {
             border-radius: var(--radius-md);
             overflow: hidden;
-            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
-            background: rgba(0,0,0,0.2);
+            box-shadow: 0 15px 30px rgba(10, 25, 47, 0.1);
+            background: rgba(10, 25, 47, 0.03);
+            border: 1px solid var(--border-subtle);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -696,17 +940,17 @@
         }
         .project-info li strong { color: var(--text-main); font-weight: 600; margin-right: 4px;}
 
-        /* Estilo para botón secundario (enlaces de proyectos) */
+        /* Estilo para botón secundario */
         .btn-outline {
             display: inline-flex; align-items: center; gap: 8px;
             padding: 10px 20px; font-size: 0.95rem; font-weight: 600;
             color: var(--text-main); background: transparent;
-            border: 1px solid rgba(255,255,255,0.2); border-radius: 100px;
+            border: 1px solid var(--border-subtle); border-radius: 100px;
             cursor: pointer; transition: all 0.3s ease; margin-top: 24px;
             text-decoration: none; width: fit-content;
         }
         .btn-outline:hover {
-            border-color: var(--accent); color: var(--accent); background: rgba(16, 185, 129, 0.05); transform: translateY(-2px);
+            border-color: var(--accent); color: var(--accent); background: rgba(29, 99, 255, 0.05); transform: translateY(-2px);
         }
 
         /* === EXPERIENCIA === */
@@ -717,7 +961,7 @@
         }
 
         .timeline { position: relative; padding-left: 20px; }
-        .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--accent) 0%, rgba(16, 185, 129, 0) 100%); opacity: 0.3;}
+        .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--accent) 0%, rgba(29, 99, 255, 0) 100%); opacity: 0.3;}
         
         .timeline-item { position: relative; margin-bottom: 60px; }
         .timeline-item:last-child { margin-bottom: 0; }
@@ -731,46 +975,59 @@
 
         /* CTA Final Integrado */
         .cta-box {
-            background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+            background: rgba(245, 244, 238, 0.8);
+            border: 1px solid var(--border-subtle);
             padding: 80px 40px; border-radius: var(--radius-lg);
             text-align: center;
             display: flex; flex-direction: column; justify-content: center; align-items: center;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 40px rgba(10, 25, 47, 0.04);
             max-width: 800px;
             margin: 0 auto;
         }
 
-        .btn-primary { background: var(--text-main); color: #000; padding: 18px 36px; border-radius: 100px; font-weight: 800; font-size: 1.1rem; cursor: pointer; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); border: none; }
-        .btn-primary:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(255,255,255,0.15); background: var(--accent); color: #000; }
+        .btn-primary { 
+            background: var(--text-main); 
+            color: var(--bg-page); 
+            padding: 18px 36px; 
+            border-radius: 100px; 
+            font-weight: 800; 
+            font-size: 1.1rem; 
+            cursor: pointer; 
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); 
+            border: none; 
+        }
+        .btn-primary:hover { 
+            transform: translateY(-4px); 
+            box-shadow: 0 15px 30px rgba(29, 99, 255, 0.3); 
+            background: var(--accent); 
+            color: var(--bg-page); 
+        }
         
         /* === MODALES === */
         .modal {
             display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(10px);
+            background: rgba(10, 25, 47, 0.85); backdrop-filter: blur(10px);
             align-items: center; justify-content: center; opacity: 0; transition: opacity 0.4s ease;
         }
         .modal.active { display: flex; opacity: 1; }
         
-        /* Ajuste para modal de Hoja de Vida (scrollable) */
         .modal.resume-modal {
             align-items: flex-start;
             overflow-y: auto;
             padding: 40px 20px;
         }
 
-        /* IMAGEN EXPANDIDA EN EL MODAL: ESQUINAS REDONDAS Y RESPLANDOR */
         .modal-content { 
             max-width: 85%; 
             max-height: 85vh; 
-            border-radius: 16px; /* Esquinas redondas en modal */
-            box-shadow: 0 20px 60px rgba(0,0,0,0.8), 0 0 50px rgba(16, 185, 129, 0.2); /* Resplandor llamativo suave */
-            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(10, 25, 47, 0.8), 0 0 50px rgba(29, 99, 255, 0.2);
+            border: 1px solid rgba(29, 99, 255, 0.3);
         }
         
-        /* Estilos de flechas de navegación de Galería */
         .nav-btn {
             position: absolute; top: 50%; transform: translateY(-50%);
-            font-size: 40px; color: var(--text-muted); cursor: pointer;
+            font-size: 40px; color: var(--bg-page); cursor: pointer;
             padding: 20px; user-select: none; transition: color 0.3s, transform 0.3s;
             z-index: 10001;
         }
@@ -779,26 +1036,25 @@
         .next-btn { right: 2%; }
 
         .form-box {
-            background: #0a1813; padding: 50px; border-radius: var(--radius-lg);
+            background: var(--bg-page); padding: 50px; border-radius: var(--radius-lg);
             width: 90%; max-width: 500px; position: relative;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+            box-shadow: 0 30px 60px rgba(10, 25, 47, 0.3);
+            border: 1px solid var(--border-subtle);
         }
         .close-btn { position: absolute; top: 24px; right: 30px; font-size: 32px; cursor: pointer; color: var(--text-muted); transition: color 0.3s;}
         .close-btn:hover { color: var(--accent); }
         
-        /* Inputs ultra-modernos */
         .form-input { 
             width: 100%; padding: 16px 0; margin-bottom: 24px; 
-            border: none; border-bottom: 2px solid rgba(255,255,255,0.1); 
+            border: none; border-bottom: 2px solid var(--border-subtle); 
             border-radius: 0; font-family: inherit; font-size: 1.1rem;
             background: transparent; color: var(--text-main);
             transition: border-color 0.3s;
         }
         .form-input:focus { outline: none; border-bottom-color: var(--accent); }
-        .form-input::placeholder { color: rgba(255,255,255,0.3); }
+        .form-input::placeholder { color: var(--text-muted); }
 
         /* === ESTILOS HOJA DE VIDA (DOCUMENTO PDF) === */
-        /* Restaurado para heredar el var(--accent) Verde Jade */
         .resume-controls {
             position: sticky;
             top: 0;
@@ -809,59 +1065,58 @@
             width: 100%;
             max-width: 794px;
             margin: 0 auto 20px;
-            background: rgba(0,0,0,0.8);
+            background: rgba(10, 25, 47, 0.9);
             padding: 15px;
             border-radius: 12px;
             backdrop-filter: blur(10px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 30px rgba(10, 25, 47, 0.3);
             gap: 16px;
         }
         .resume-document {
-            background: #ffffff;
-            color: #111827;
+            background: var(--bg-page);
+            color: var(--text-main);
             width: 100%;
-            max-width: 794px; /* Ancho optimizado para tamaño A4 exacto */
+            max-width: 794px;
             margin: 0 auto;
-            padding: 30px 40px; /* Reducido para ganar espacio vertical */
+            padding: 30px 40px;
             border-radius: 8px;
-            box-shadow: 0 20px 60px rgba(16, 185, 129, 0.2); /* Sombra jade para el doc flotante */
+            border: 1px solid var(--border-subtle);
+            box-shadow: 0 20px 60px rgba(10, 25, 47, 0.15);
             font-family: 'Inter', sans-serif;
             text-align: left;
-            line-height: 1.35; /* Interlineado más compacto */
+            line-height: 1.35;
         }
-        .resume-document h1, .resume-document h2, .resume-document h3 { color: #111827; }
+        .resume-document h1, .resume-document h2, .resume-document h3 { color: var(--text-main); }
         .resume-header { border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 16px; }
         .resume-header h1 { font-size: 2rem; font-weight: 800; margin-bottom: 2px; letter-spacing: -0.03em; }
-        .resume-header p { font-size: 0.9rem; color: #4b5563; font-weight: 600; margin-bottom: 8px; }
-        .resume-contact { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 0.8rem; color: #374151; font-weight: 500;}
+        .resume-header p { font-size: 0.9rem; color: var(--text-muted); font-weight: 600; margin-bottom: 8px; }
+        .resume-contact { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 0.8rem; color: var(--text-muted); font-weight: 500;}
         .resume-contact span { display: flex; align-items: center; gap: 4px; }
         
-        /* Layout de 2 columnas para un diseño de 1 página compacto */
         .resume-body { display: grid; grid-template-columns: 32% 1fr; gap: 20px; align-items: start; }
         
         .resume-section { margin-bottom: 16px; }
         .resume-section:last-child { margin-bottom: 0; }
-        .resume-section h2 { font-size: 1rem; font-weight: 800; color: var(--accent); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #e5e7eb; padding-bottom: 4px;}
+        .resume-section h2 { font-size: 1rem; font-weight: 800; color: var(--accent); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-subtle); padding-bottom: 4px;}
         
         .resume-item { margin-bottom: 10px; }
         .resume-item:last-child { margin-bottom: 0; }
         .resume-item-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
-        .resume-item-title { font-size: 0.95rem; font-weight: 800; color: #111827;}
+        .resume-item-title { font-size: 0.95rem; font-weight: 800; color: var(--text-main);}
         .resume-item-subtitle { font-size: 0.85rem; color: var(--accent); font-weight: 700; display: block;}
-        .resume-item-date { font-size: 0.8rem; color: #6b7280; font-weight: 600; text-align: right; white-space: nowrap; margin-left: 8px;}
-        .resume-item-desc { font-size: 0.85rem; color: #374151; }
+        .resume-item-date { font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-align: right; white-space: nowrap; margin-left: 8px;}
+        .resume-item-desc { font-size: 0.85rem; color: var(--text-muted); }
         
         .resume-skills-grid { display: flex; flex-direction: column; gap: 8px; }
-        .resume-list { padding-left: 14px; margin-top: 2px; font-size: 0.85rem; color: #374151; display: flex; flex-direction: column; gap: 2px;}
+        .resume-list { padding-left: 14px; margin-top: 2px; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 2px;}
         .resume-list li { padding-left: 2px; }
         
-        /* Botón descargar Imagen */
         .btn-capture {
-            background: transparent; color: var(--text-muted); border: 1px dashed rgba(255,255,255,0.2); 
+            background: transparent; color: var(--text-muted); border: 1px dashed var(--border-subtle); 
             padding: 12px 24px; border-radius: 100px; font-weight: 600; cursor: pointer; transition: all 0.3s;
             margin-top: 24px; display: inline-flex; align-items: center; gap: 8px;
         }
-        .btn-capture:hover { background: rgba(255,255,255,0.05); color: var(--text-main); border-color: var(--accent); }
+        .btn-capture:hover { background: var(--surface-hover); color: var(--accent); border-color: var(--accent); }
 
         /* === RESPONSIVE === */
         @media (max-width: 1000px) {
@@ -872,7 +1127,7 @@
             
             .resume-document { padding: 30px 20px; }
             .resume-header h1 { font-size: 2rem; }
-            .resume-body { grid-template-columns: 1fr; gap: 20px; } /* Se apila en móvil */
+            .resume-body { grid-template-columns: 1fr; gap: 20px; }
             .resume-skills-grid { grid-template-columns: 1fr; }
             .resume-item-header { flex-direction: column; justify-content: flex-start; align-items: flex-start;}
             .resume-item-date { text-align: left; margin-bottom: 8px; margin-left: 0; }
@@ -881,7 +1136,6 @@
         @media (max-width: 800px) {
             body { flex-direction: column; }
             
-            /* HUD oculto totalmente en móviles */
             aside.hud-sidebar { display: none !important; }
 
             main.content-area { padding: 0; width: 100%; }
@@ -894,14 +1148,12 @@
             .hero-desc { text-align: left; margin-bottom: 32px; }
             .hero-photo-main { align-self: center; }
             
-            /* Tarjeta LyCodeLife Móvil */
             .hero-cta-card { flex-direction: column; text-align: center; padding: 24px; margin: 0 0 40px 0; }
             .hero-cta-card img { width: 140px; height: 140px; object-fit: contain; }
 
             .certs-container { grid-template-columns: 1fr; gap: 24px; }
             .cert-preview-area { display: none; }
             
-            /* Ajustes para ver imagen en móvil */
             .cert-thumb { display: block; }
             .cert-year { display: none; } 
             .cert-item { padding: 16px 20px; justify-content: flex-start; }
@@ -923,14 +1175,14 @@
         }
 
         /* === FUERZA ESTILOS DE PC PARA EL PDF GENERADO DESDE MÓVIL === */
-        /* Estas clases solo se aplican temporalmente durante la descarga */
         .pdf-export-mode {
             width: 794px !important;
-            min-width: 794px !important; /* Mantiene el tamaño riguroso */
+            min-width: 794px !important;
             max-width: 794px !important;
             margin: 0 !important; 
             padding: 30px 40px !important;
-            background: #ffffff !important;
+            background: #f5f4ee !important;
+            color: #0a192f !important;
             box-sizing: border-box !important;
             position: relative !important;
             transform: none !important;
@@ -955,7 +1207,8 @@
 </head>
 <body>
 
-    <!-- === FONDOS ORBES (Efecto Cristal suave) === -->
+    <!-- === LIENZO ANTIGRAVITY Y FONDOS ORBES === -->
+    <canvas id="antigravity-canvas"></canvas>
     <div class="bg-orbs">
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
@@ -964,7 +1217,8 @@
     <!-- === HUD LATERAL (SIDEBAR) === -->
     <aside class="hud-sidebar">
         <div class="hud-profile">
-            <img src="imagenes/avatar.png" alt="Avatar Shordy Simbaña - Desarrollador" onerror="this.src='https://placehold.co/400x400/0a1813/10b981?text=Shordy'">
+            <img src="imagenes/avatar.png" alt="Avatar Shordy Simbaña - Desarrollador" onerror="this.src='https://placehold.co/400x400/0a192f/f5f4ee?text=Shordy'">
+            <h2>Shordy Simbaña</h2>
         </div>
         
         <nav class="hud-nav">
@@ -973,20 +1227,19 @@
             <a href="#certificados" title="Certificados de tecnología y programación">Credenciales</a>
             <a href="#servicios" title="Servicios de Desarrollo de Software a medida">Servicios</a>
             <a href="#experiencia" title="Experiencia laboral y LyCodeLife">Experiencia</a>
-            <a href="#testimonios" title="Testimonios de clientes satisfechos">Testimonios</a>
-            <a href="#faq" title="Preguntas Frecuentes sobre mis servicios">FAQ</a>
+            <a href="#testimonios" title="Testimonios de clientes">Testimonios</a>
+            <a href="#faq" title="Preguntas frecuentes sobre mis servicios">FAQ</a>
         </nav>
 
         <div class="hud-footer">
             <div class="social-links">
                 <a href="https://github.com/ShordyX" target="_blank" aria-label="GitHub de Shordy Simbaña"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
                 <a href="https://www.linkedin.com/in/shordy/" target="_blank" aria-label="LinkedIn de Shordy Simbaña"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-                <a href="mailto:shordy46.58@gmail.com" aria-label="Enviar Email a Shordy Simbaña"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+                <a href="mailto:shordy46.58@gmail.com" aria-label="Enviar correo a Shordy Simbaña"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
             </div>
             <span class="hud-footer-text">Talento orgullosamente Ecuatoriano</span>
         </div>
         
-        <!-- Imagen de la bandera degradada al fondo de la barra lateral -->
         <img src="imagenes/bandera.png" alt="Bandera de Ecuador - Programador de Quito" class="sidebar-flag" onerror="this.src='https://images.unsplash.com/photo-1590089415225-401ed6f9db8e?q=80&w=600&auto=format&fit=crop'">
     </aside>
 
@@ -998,21 +1251,21 @@
             <div class="hero-bg-img"></div>
             <div class="hero-bg-gradient"></div>
             
-            <img src="imagenes/perfil.png" alt="Foto de Shordy Simbaña" class="hero-photo-main" onerror="this.src='https://placehold.co/400x400/0a1813/10b981?text=Shordy'">
+            <img src="imagenes/perfil.png" alt="Foto de Shordy Simbaña" class="hero-photo-main" onerror="this.src='https://placehold.co/400x400/0a192f/f5f4ee?text=Shordy'">
             
             <h1 class="hero-title">Shordy Simbaña</h1>
             <h2 class="hero-subtitle">Desarrollador de Software y Soluciones Digitales</h2>
             <p class="hero-desc">
-                Estudiante de Ingeniería en Sistemas Computacionales por UTEL. Me dedico a construir herramientas digitales, optimizar tareas y crear soluciones a medida que aporten valor real.
+                Estudiante de Ingeniería en Sistemas Computacionales en UTEL. Me dedico a construir programas útiles, automatizar tareas pesadas del día a día y desarrollar soluciones directas que le ahorren tiempo y dinero a las personas.
             </p>
 
             <!-- Botones principales -->
             <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; z-index: 10;">
                 <a href="#sobre-mi" class="btn-outline" style="margin-top: 0;" title="Leer más acerca de mí">
-                    Explorar mi perfil
+                    Conocer mi trabajo
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 6px;"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
                 </a>
-                <button onclick="openResumeModal()" class="btn-outline" style="margin-top: 0; border-color: var(--accent); color: var(--accent); background: rgba(16,185,129,0.05);" title="Visualizar documento de Hoja de Vida">
+                <button onclick="openResumeModal()" class="btn-outline" style="margin-top: 0; border-color: var(--accent); color: var(--accent); background: rgba(29,99,255,0.05);" title="Visualizar documento de Hoja de Vida">
                     Ver hoja de vida
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 6px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
                 </button>
@@ -1028,11 +1281,11 @@
             <!-- SECCIÓN 1: SOBRE MÍ HUMANIZADO -->
             <section class="section" id="sobre-mi">
                 <div class="about-card">
-                    <h2>Más que código, visión a futuro.</h2>
+                    <h2>Más que código, ganas de resolver problemas reales.</h2>
                     <p>
-                        ¡Hola! Soy Shordy. Para mí, la tecnología no se trata solo de escribir código o arreglar computadoras, sino de construir soluciones que hagan la vida más fácil. Veo a las máquinas como las aliadas perfectas para transformar ideas sueltas en herramientas que realmente aporten valor y faciliten el trabajo diario.<br><br>
+                        ¡Hola! Soy Shordy. Para mí la programación no es sentarse a escribir líneas complejas sin sentido ni formatear computadoras por rutina; es la mejor forma de agarrar una idea suelta y transformarla en una herramienta que le haga el trabajo más fácil a la gente.<br><br>
                         
-                        Creo firmemente que la base de cualquier gran proyecto no es solo la técnica, sino <strong>los valores, la ética y la claridad</strong>. Soy una persona responsable, que trabaja con iniciativa propia y que se pone la camiseta de tu equipo. Si buscas a alguien que no solo ejecute, sino que entienda tu visión, se comprometa al 100% y te brinde tranquilidad desde el día uno, estás en el lugar correcto.
+                        Tengo claro que el éxito de cualquier proyecto no depende solo de saber programar, sino de <strong>la honestidad, la palabra y el compromiso</strong> con el que se trabaja. Soy de los que tienen iniciativa, aprenden rápido y se ponen la camiseta de tu equipo desde el primer momento. Si buscas a alguien confiable, que entienda lo que necesitas y te hable claro y sin rodeos técnicos innecesarios, estás en el lugar correcto.
                     </p>
                 </div>
             </section>
@@ -1041,24 +1294,145 @@
             <section class="section" id="proyectos">
                 <div class="section-header">
                     <h2 class="section-title">Proyectos Destacados</h2>
-                    <p class="section-subtitle">Construyendo ideas, uniendo tecnología y necesidades reales.</p>
+                    <p class="section-subtitle">Soluciones que nacieron de necesidades concretas y pasión por crear.</p>
                 </div>
                 
                 <div style="display: flex; flex-direction: column; gap: 40px;">
-                    <!-- Proyecto Nuevo: WhatsApp Life -->
+                    <!-- PROYECTO TOP FLAGSHIP: DANIKA -->
+                    <div class="project-card-featured">
+                        <img src="imagenes/proyectos/danika-logo.png" alt="Logo Danika Modding Engine" class="featured-logo" onerror="this.src='https://placehold.co/200x200/0a192f/f5f4ee?text=Danika'">
+                        
+                        <h3 class="featured-title">Danika</h3>
+                        <span class="featured-subtitle">Ingeniería Inversa, Modding Local y Manejo de Recursos en Source 2</span>
+
+                        <div class="featured-desc-box">
+                            <ul>
+                                <li><strong>Ingeniería en Source 2:</strong> Diseñé esta suite para poder leer y entender cómo empaqueta archivos el motor Source 2 de Valve, permitiendo que cualquier persona pueda personalizar sus skins sin tener que pelearse con comandos complicados.</li>
+                                <li><strong>Modding seguro y local:</strong> Todo el intercambio visual ocurre únicamente en la computadora del usuario. No se tocan archivos de servidores ni se altera la partida de los demás jugadores.</li>
+                                <li><strong>Facilidad total para Dota 2:</strong> Creé un flujo sencillo que permite probar, cambiar e instalar variantes cosméticas con un solo clic, sin enredos técnicos.</li>
+                                <li><strong>Cuidado e integridad con el juego:</strong> Desarrollado respetando las zonas protegidas de memoria y red del juego, asegurando que funcione únicamente sobre la parte gráfica local sin generar conflictos con sistemas anti-trampas.</li>
+                                <li><strong>Código modular:</strong> Estructurado de forma ordenada para que en el futuro pueda adaptarse fácilmente a otros juegos que compartan este mismo motor.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Galería de Capturas Interactivas -->
+                        <div class="featured-gallery">
+                            <div class="featured-gallery-item">
+                                <img src="imagenes/proyectos/danika-1.png" alt="Danika - Vista del Sistema 1" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x500/0a192f/f5f4ee?text=Danika+Panel+Principal'">
+                            </div>
+                            <div class="featured-gallery-item">
+                                <img src="imagenes/proyectos/danika-2.png" alt="Danika - Vista del Sistema 2" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x500/0a192f/f5f4ee?text=Danika+Editor+Skins'">
+                            </div>
+                            <div class="featured-gallery-item">
+                                <img src="imagenes/proyectos/danika-3.png" alt="Danika - Vista del Sistema 3" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x500/0a192f/f5f4ee?text=Danika+Sistema+Anti-Cheat'">
+                            </div>
+                        </div>
+
+                        <!-- Apartado de Video Demostrativo (YouTube) -->
+                        <div class="featured-video-section">
+                            <h4 class="featured-section-title">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                Demostración en Video
+                            </h4>
+                            <a href="https://www.youtube.com/watch?v=C5ZVKpqyXU0" target="_blank" class="video-card" title="Ver demostración de Danika en YouTube">
+                                <img src="https://img.youtube.com/vi/C5ZVKpqyXU0/maxresdefault.jpg" alt="Miniatura Video Danika" class="video-thumb" onerror="this.onerror=null; this.src='https://img.youtube.com/vi/ID_DEL_VIDEO/hqdefault.jpg'">
+                                <div class="video-play-btn">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Botones de Enlace Oficiales -->
+                        <div class="featured-actions">
+                            <a href="https://jadedanika.github.io/Danika-/" target="_blank" class="btn-glow" style="margin: 0;" title="Visitar Sitio Oficial de Danika">
+                                Sitio Oficial de Danika
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                            <a href="https://github.com/JadeDanika/Danika-" target="_blank" class="btn-outline" style="margin-top: 0;" title="Ver Repositorio de Danika en GitHub">
+                                Ver Repositorio en GitHub
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2: CEMEX - Optimización y PoC de Concreto -->
                     <div class="project-card">
                         <div class="project-img-wrapper">
-                            <img src="imagenes/proyectos/whats.png" alt="Proyecto de Software: WhatsApp Life" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x600/0a1813/10b981?text=WhatsApp+Life'">
+                            <img src="imagenes/proyectos/cemex.png" alt="CEMEX - Digitalización y PoC de Agregados" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x600/0a192f/f5f4ee?text=CEMEX+PoC+Agregados'">
                         </div>
                         <div class="project-info">
-                            <h3>WhatsApp Life (by LyCodeLife)</h3>
-                            <span class="project-role">Automatización de Procesos & Sistema Anti-Ban</span>
+                            <h3>CEMEX — Digitalización y Control de Mezclas</h3>
+                            <span class="project-role">Análisis de Datos Industriales y Prueba de Concepto (Agosto 2026)</span>
                             <ul>
-                                <li><strong>Software avanzado:</strong> Automatiza envíos masivos en WhatsApp Web operando directamente y sin depender de la API oficial.</li>
-                                <li><strong>Secuencias multimedia:</strong> Crea cadenas completas de mensajes enviando texto, imágenes, videos y documentos en un solo flujo.</li>
-                                <li><strong>Gestión Inteligente:</strong> Importa listas de contactos desde bases de datos (Excel) y usa plantillas personalizadas para que cada contacto se sienta bien atendido y humano.</li>
-                                <li><strong>Sistema Anti-Ban:</strong> Protege tu número con un motor de comportamiento orgánico que simula tiempos dinámicos de tipeo, pausas inter-mensajes y descansos naturales.</li>
-                                <li><strong>UX Premium:</strong> Experiencia de usuario totalmente moderna, minimalista y sin complicaciones técnicas.</li>
+                                <li><strong>Trabajo con el equipo de innovación:</strong> Colaboré mano a mano con el Centro de Innovación y Desarrollo de CEMEX para entender por qué variaban las mezclas de concreto y buscar una forma de estandarizarlas bajo normas ISO 9001.</li>
+                                <li><strong>Hallazgos claros en los datos:</strong> Revisamos 3,274 registros de 291 productos y encontramos diferencias de hasta 129 kilos de cemento por metro cúbico entre plantas de la misma zona, causadas en gran parte por no medir a tiempo la humedad de la arena y grava.</li>
+                                <li><strong>Plan práctico por etapas:</strong> Propuse una ruta de trabajo que incluye alertas automáticas de desvío, cartas de control diario y las bases para monitorear la operación en tiempo real.</li>
+                                <li><strong>Prueba con visión por computadora:</strong> Armamos una prueba funcional con cámaras y algoritmos para calcular el volumen de material en los patios y ayudar a pedir reposiciones antes de que falte mezcla.</li>
+                                <li><strong>Ahorro demostrado:</strong> Dejamos calculada una proyección de ahorro de entre 2,900 y 7,200 toneladas de cemento al mes si las sucursales emparejan sus mediciones con las mejores prácticas del grupo.</li>
+                            </ul>
+                            <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+                                <a href="https://github.com/benrohdz08-max/poc-volumen-agregados" target="_blank" class="btn-outline" style="margin-top: 0;" title="Ver repositorio de la PoC de CEMEX">
+                                    Ver Repositorio
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <button onclick="openSingleImage('imagenes/certificado-cemex.png')" class="btn-outline" style="margin-top: 0;" title="Ver certificado de CEMEX">
+                                    Ver Certificado
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto: Lyra Lazuli -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="imagenes/proyectos/lyra-lazuli.png" alt="Lyra Lazuli - Launcher y Optimizador" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x600/0a192f/f5f4ee?text=Lyra+Lazuli'">
+                        </div>
+                        <div class="project-info">
+                            <h3>Lyra Lazuli</h3>
+                            <span class="project-role">Launcher de Videojuegos, Optimización de Sistema y Respaldo de Partidas</span>
+                            <ul>
+                                <li><strong>Pensado para exprimir tu PC:</strong> Nació de una realidad común: muchas veces tu computadora no es lenta por sus piezas, sino porque Windows carga procesos en segundo plano que no necesitas mientras juegas.</li>
+                                <li><strong>Tu biblioteca en un solo lugar:</strong> Detecta tus juegos instalados y los organiza en una pantalla bonita, limpia y lista para jugar al instante.</li>
+                                <li><strong>Experiencia fluida:</strong> Inspirada en la comodidad visual de las consolas modernas, sin menús pesados ni botones confusos.</li>
+                                <li><strong>Tus partidas siempre a salvo:</strong> Incluye un sistema que respalda automáticamente tus archivos de guardado para que nunca pierdas tus horas de juego por un error o formateo.</li>
+                                <li><strong>Tres modos de ajuste:</strong> Puedes elegir qué tanto rendimiento quieres liberar según lo que tu computadora necesite en ese momento para ganar cuadros por segundo.</li>
+                            </ul>
+                            <div style="margin-top: 24px;">
+                                <a href="https://www.youtube.com/watch?v=Ug1Q-KzlWAY" target="_blank" class="video-card" style="max-width: 440px;" title="Ver demostración de Lyra Lazuli en YouTube">
+                                    <img src="https://img.youtube.com/vi/Ug1Q-KzlWAY/maxresdefault.jpg" alt="Miniatura Video Lyra Lazuli" class="video-thumb" onerror="this.onerror=null; this.src='https://img.youtube.com/vi/TU_ID_DE_VIDEO/hqdefault.jpg'">
+                                    <div class="video-play-btn" style="width: 52px; height: 52px;">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap;">
+                                <a href="https://shordyx.github.io/LyraLazuli/" target="_blank" class="btn-outline" style="margin-top: 0;" title="Visitar la web de Lyra Lazuli">
+                                    Sitio Web
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <a href="https://github.com/ShordyX/LyraLazuli" target="_blank" class="btn-outline" style="margin-top: 0;" title="Ver repositorio de Lyra Lazuli en GitHub">
+                                    Ver Repositorio
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto: WhatsApp Life -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="imagenes/proyectos/whats.png" alt="Proyecto de Software: WhatsApp Life" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x600/0a192f/f5f4ee?text=WhatsApp+Life'">
+                        </div>
+                        <div class="project-info">
+                            <h3>WhatsApp Life (por LyCodeLife)</h3>
+                            <span class="project-role">Automatización Práctica y Protección de Número</span>
+                            <ul>
+                                <li><strong>Pensado para personas y negocios:</strong> Permite contactar listas de clientes en WhatsApp Web de manera automática sin tener que pagar APIs costosas ni hacer trámites largos.</li>
+                                <li><strong>Envíos con todo lo necesario:</strong> Permite mandar mensajes con fotos, documentos, catálogos o videos en una sola tanda ordenada.</li>
+                                <li><strong>Importa tus contactos desde Excel:</strong> Puedes cargar tus listas directamente y usar mensajes personalizados para que cada persona reciba su nombre y un trato cercano.</li>
+                                <li><strong>Simulación de escritura natural:</strong> Para cuidar tu cuenta, el programa escribe con pausas y tiempos variables, tal cual lo haría una persona y no un robot acelerado.</li>
+                                <li><strong>Fácil de usar:</strong> Una interfaz directa y limpia para que cualquier persona en tu negocio lo maneje sin dolor de cabeza.</li>
                             </ul>
                             <a href="https://github.com/ShordyX/WhatsappLife" target="_blank" class="btn-outline" title="Ver el código de WhatsApp Life">
                                 Ver Repositorio
@@ -1070,16 +1444,16 @@
                     <!-- Proyecto 1: Hackathon -->
                     <div class="project-card">
                         <div class="project-img-wrapper">
-                            <img src="imagenes/proyectos/tienda nube.png" alt="Hackathon UTEL Tiendanube por Shordy Simbaña" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x600/0a1813/10b981?text=Proyecto+NubIA'">
+                            <img src="imagenes/proyectos/tienda nube.png" alt="Hackathon UTEL Tiendanube por Shordy Simbaña" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x600/0a192f/f5f4ee?text=Proyecto+NubIA'">
                         </div>
                         <div class="project-info">
                             <h3>Hackathon - UTEL / Tiendanube</h3>
-                            <span class="project-role">Lead Developer & Project Manager (Marzo 2026)</span>
+                            <span class="project-role">Líder de Desarrollo y Gestión de Proyecto (Marzo 2026)</span>
                             <ul>
-                                <li><strong>Estrategia y equipo:</strong> Alineé a las áreas de diseño, negocios e infraestructura para trabajar con máxima agilidad.</li>
-                                <li><strong>Liderazgo técnico:</strong> Lideré el frontend y la arquitectura en GitHub, asegurando la calidad del código.</li>
-                                <li><strong>Impulso de desarrollo:</strong> Utilicé herramientas como Gemini CLI para agilizar la creación de código y toma de decisiones bajo presión.</li>
-                                <li><strong>Nacimiento de "NubIA":</strong> Diseñé la arquitectura de este asistente inteligente para emprendedores.</li>
+                                <li><strong>Trabajo en equipo bajo presión:</strong> Coordiné el trabajo entre diseño, negocio y programación para avanzar rápido durante las horas de la competencia.</li>
+                                <li><strong>Dirección técnica:</strong> Me encargué de la estructura del proyecto en GitHub y de la parte visual para que el producto fuera sólido y atractivo.</li>
+                                <li><strong>Uso inteligente de herramientas:</strong> Apoyé el avance rápido del equipo usando asistentes de código para resolver dudas técnicas y validar ideas en minutos.</li>
+                                <li><strong>Creación de "NubIA":</strong> Diseñamos este asistente pensado para ayudar con dudas reales a pequeños emprendedores que abren su tienda en línea por primera vez.</li>
                             </ul>
                             <a href="https://github.com/ShordyEA/hackathon-TiendaNube/tree/main" target="_blank" class="btn-outline" title="Ver el código del Hackathon">
                                 Ver Repositorio
@@ -1091,15 +1465,15 @@
                     <!-- Proyecto 2: MAATE -->
                     <div class="project-card">
                         <div class="project-img-wrapper">
-                            <img src="imagenes/proyectos/mate.png" alt="Proyecto de Digitalización del Ministerio del Ambiente MAATE" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x600/0a1813/10b981?text=Proyecto+MAATE'">
+                            <img src="imagenes/proyectos/mate.png" alt="Proyecto de Digitalización del Ministerio del Ambiente MAATE" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x600/0a192f/f5f4ee?text=Proyecto+MAATE'">
                         </div>
                         <div class="project-info">
                             <h3>Digitalización Histórica - MAATE</h3>
-                            <span class="project-role">Gestión de Datos & Archivo (Proyecto de 4 meses)</span>
+                            <span class="project-role">Gestión de Datos y Archivo (Proyecto de 4 meses)</span>
                             <ul>
-                                <li><strong>Rescate patrimonial:</strong> Nos sumergimos en la historia para extraer y preservamos información invaluable, ¡algunos documentos databan del año 1850!</li>
-                                <li><strong>Estructuración de datos:</strong> Construimos una sólida base de datos consolidando miles de registros, cédulas y hojas de vida de ex-empleados.</li>
-                                <li><strong>Transformación digital:</strong> Ayudé a modernizar el archivo físico, convirtiendo enormes cantidades de papel en información estructurada, segura y de fácil acceso.</li>
+                                <li><strong>Cuidar nuestra historia:</strong> Tuvimos en nuestras manos documentos valiosos del patrimonio del país, revisando archivos que databan desde 1850 para que no se pierdan.</li>
+                                <li><strong>Organización a fondo:</strong> Armamos una base de datos clara y ordenada con miles de expedientes, cédulas y registros de ex-empleados que antes estaban solo en papel.</li>
+                                <li><strong>Cambio a lo digital:</strong> Ayudé a pasar carpetas físicas deterioradas por los años a un formato digital ordenado, seguro y fácil de encontrar en segundos.</li>
                             </ul>
                         </div>
                     </div>
@@ -1110,15 +1484,14 @@
             <section class="section" id="certificados">
                 <div class="section-header">
                     <h2 class="section-title">Credenciales</h2>
-                    <p class="section-subtitle">Historial académico verificado. Pasa el cursor para ver los detalles.</p>
+                    <p class="section-subtitle">Estudios y certificados que respaldan mi camino en la tecnología.</p>
                 </div>
 
                 <div class="certs-container">
-                    <!-- Lista de textos -->
                     <div class="certs-list" id="certList">
                         
                         <div class="cert-item active" data-img="imagenes/certificado-utel.png" onclick="openGallery(this)">
-                            <img src="imagenes/certificado-utel.png" alt="Certificado Asesoría Computación UTEL" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <img src="imagenes/certificado-utel.png" alt="Certificado Asesoría Computación UTEL" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a192f/f5f4ee?text=Cert'">
                             <div class="cert-info">
                                 <h3>Asesoría en Ing. en Computación</h3>
                                 <p>Utel Universidad</p>
@@ -1126,9 +1499,17 @@
                             <span class="cert-year">2025</span>
                         </div>
 
-                        <!-- NUEVA CERTIFICACIÓN AÑADIDA: SEO -->
+                        <div class="cert-item" data-img="imagenes/certificado-cemex.png" onclick="openGallery(this)">
+                            <img src="imagenes/certificado-cemex.png" alt="Certificado CEMEX - Innovación y Optimización" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a192f/f5f4ee?text=CEMEX'">
+                            <div class="cert-info">
+                                <h3>Programa Empresarial CEMEX</h3>
+                                <p>Centro de Innovación y Desarrollo CEMEX</p>
+                            </div>
+                            <span class="cert-year">2026</span>
+                        </div>
+
                         <div class="cert-item" data-img="imagenes/seo.png" onclick="openGallery(this)">
-                            <img src="imagenes/seo.png" alt="Certificado Curso de SEO 2026 para IA y Google" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <img src="imagenes/seo.png" alt="Certificado Curso de SEO 2026 para IA y Google" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a192f/f5f4ee?text=Cert'">
                             <div class="cert-info">
                                 <h3>SEO para IA y Google</h3>
                                 <p>BIG School / BIGSEO</p>
@@ -1137,16 +1518,16 @@
                         </div>
 
                         <div class="cert-item" data-img="imagenes/certificado-hackathon.png" onclick="openGallery(this)">
-                            <img src="imagenes/certificado-hackathon.png" alt="Certificado Hackathon Tiendanube" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <img src="imagenes/certificado-hackathon.png" alt="Certificado Hackathon Tiendanube" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a192f/f5f4ee?text=Cert'">
                             <div class="cert-info">
                                 <h3>Hackathon: Innovación E-commerce</h3>
-                                <p>Utel & Tiendanube</p>
+                                <p>Utel y Tiendanube</p>
                             </div>
                             <span class="cert-year">2026</span>
                         </div>
 
                         <div class="cert-item" data-img="imagenes/certificado-forense.png" onclick="openGallery(this)">
-                            <img src="imagenes/certificado-forense.png" alt="Certificado Informática Forense" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <img src="imagenes/certificado-forense.png" alt="Certificado Informática Forense" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a192f/f5f4ee?text=Cert'">
                             <div class="cert-info">
                                 <h3>Informática Forense</h3>
                                 <p>Academia Progenios</p>
@@ -1154,9 +1535,8 @@
                             <span class="cert-year">2025</span>
                         </div>
 
-                        <!-- Certificados Ocultos inicialmente -->
                         <div class="cert-item hidden-cert" style="display: none;" data-img="imagenes/certificado-emotos.png" onclick="openGallery(this)">
-                            <img src="imagenes/certificado-emotos.png" alt="Certificado de Customer Experience" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <img src="imagenes/certificado-emotos.png" alt="Certificado de Customer Experience" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a192f/f5f4ee?text=Cert'">
                             <div class="cert-info">
                                 <h3>Customer Experience y Asistencia</h3>
                                 <p>Remotos Academy / CertiProf</p>
@@ -1165,24 +1545,23 @@
                         </div>
 
                         <div class="cert-item hidden-cert" style="display: none;" data-img="imagenes/certificado-bionics.png" onclick="openGallery(this)">
-                            <img src="imagenes/certificado-bionics.png" alt="Certificado Bionics" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
-                            <div class="cert-info"><h3>Intro. to Bionic Prostheses</h3><p>P4H Bionics</p></div><span class="cert-year">2024</span>
+                            <img src="imagenes/certificado-bionics.png" alt="Certificado Bionics" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a192f/f5f4ee?text=Cert'">
+                            <div class="cert-info"><h3>Intro. a Prótesis Biónicas</h3><p>P4H Bionics</p></div><span class="cert-year">2024</span>
                         </div>
                         <div class="cert-item hidden-cert" style="display: none;" data-img="imagenes/certificado-raee-1.png" onclick="openGallery(this)">
-                            <img src="imagenes/certificado-raee-1.png" alt="Certificado Gestión RAEE 1" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <img src="imagenes/certificado-raee-1.png" alt="Certificado Gestión RAEE 1" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a192f/f5f4ee?text=Cert'">
                             <div class="cert-info"><h3>Gestión de RAEE (Parte 1)</h3><p>Ministerio del Ambiente</p></div><span class="cert-year">2025</span>
                         </div>
                         <div class="cert-item hidden-cert" style="display: none;" data-img="imagenes/certificado-raee-2.png" onclick="openGallery(this)">
-                            <img src="imagenes/certificado-raee-2.png" alt="Certificado Gestión RAEE 2" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a1813/10b981?text=Cert'">
+                            <img src="imagenes/certificado-raee-2.png" alt="Certificado Gestión RAEE 2" class="cert-thumb" onerror="this.src='https://placehold.co/100x100/0a192f/f5f4ee?text=Cert'">
                             <div class="cert-info"><h3>Gestión de RAEE (Parte 2)</h3><p>Ministerio del Ambiente</p></div><span class="cert-year">2025</span>
                         </div>
                         
                         <button class="btn-more-certs" id="btnToggleCerts" onclick="toggleCerts()">+ Ver 4 credenciales más</button>
                     </div>
 
-                    <!-- Área de previsualización (Solo visible en Desktop) -->
                     <div class="cert-preview-area" onclick="openLightboxPreview()">
-                        <img id="mainPreviewImg" src="imagenes/certificado-utel.png" alt="Vista previa del certificado" class="cert-preview-img" onerror="this.src='https://placehold.co/600x400/0a1813/10b981?text=Certificado'">
+                        <img id="mainPreviewImg" src="imagenes/certificado-cemex.png" alt="Vista previa del certificado CEMEX" class="cert-preview-img" onerror="this.src='https://placehold.co/600x400/0a192f/f5f4ee?text=Certificado+CEMEX'">
                     </div>
                 </div>
             </section>
@@ -1191,65 +1570,48 @@
             <section class="section" id="servicios">
                 <div class="section-header">
                     <h2 class="section-title">Mis Servicios</h2>
-                    <p class="section-subtitle">Soluciones tecnológicas puntuales para escalar y modernizar tus proyectos.</p>
+                    <p class="section-subtitle">Soluciones directas para hacer crecer y modernizar lo que haces.</p>
                 </div>
                 
                 <div class="bento-grid">
-                    <!-- Servicio 1 -->
                     <div class="bento-item" onmousemove="handleMouseMove(event, this)">
                         <svg class="bento-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                         <h3 class="bento-title">Automatización de Procesos</h3>
-                        <p class="bento-desc">Eliminamos el trabajo manual y repetitivo. Creo scripts y flujos de trabajo a medida que ahorran tiempo y reducen errores humanos a cero.</p>
+                        <p class="bento-desc">Basta de pasar horas haciendo clics repetitivos o copiando tablas. Escribo programas y flujos de trabajo que hacen esas tareas por ti en segundos y sin equivocaciones humanas.</p>
                     </div>
                 
-                    <!-- Servicio 2 -->
                     <div class="bento-item" onmousemove="handleMouseMove(event, this)">
                         <svg class="bento-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
                         <h3 class="bento-title">Desarrollo a Medida</h3>
-                        <p class="bento-desc">Si tienes una idea compleja, construyo la aplicación web o el sistema exacto que necesitas. Arquitecturas limpias, modulares y sin código basura.</p>
+                        <p class="bento-desc">Si necesitas una página web especial o un sistema interno para tu empresa, lo construyo desde cero. Código claro, rápido y pensado para lo que realmente vas a usar.</p>
                     </div>
 
-                    <!-- Servicio 3 -->
                     <div class="bento-item" onmousemove="handleMouseMove(event, this)">
                         <svg class="bento-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                         <h3 class="bento-title">Integración de Inteligencia Artificial</h3>
-                        <p class="bento-desc">Implementación estratégica de modelos de lenguaje (LLMs) para optimizar tareas operativas, analizar datos y mejorar eficientemente el manejo de información en tus sistemas.</p>
+                        <p class="bento-desc">Conectamos herramientas inteligentes para que atiendan consultas frecuentes de tus clientes, te ayuden a resumir información o clasifiquen datos sin complicaciones.</p>
                     </div>
 
-                    <!-- Servicio 4 -->
                     <div class="bento-item" onmousemove="handleMouseMove(event, this)">
                         <svg class="bento-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect></svg>
-                        <h3 class="bento-title">Soporte Hardware</h3>
-                        <p class="bento-desc">Aseguro que tu infraestructura física nunca te detenga. Mantenimiento preventivo, diagnóstico y optimización de equipos informáticos.</p>
+                        <h3 class="bento-title">Soporte y Optimización de Equipos</h3>
+                        <p class="bento-desc">Me aseguro de que tus computadoras respondan cuando las necesitas. Mantenimiento, limpieza profunda del sistema, diagnóstico y mejoras para que trabajes sin trabas.</p>
                     </div>
-                </div>
-
-                <!-- TECNOLOGÍAS & HERRAMIENTAS -->
-                <div class="tech-container">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" class="tech-icon" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" title="CSS3" class="tech-icon" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" title="Python" class="tech-icon" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" title="Linux" class="tech-icon" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg" alt="Windows" title="Windows" class="tech-icon" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" title="VS Code" class="tech-icon" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud" title="Google Cloud" class="tech-icon" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Microsoft_365_%282022%29.svg/256px-Microsoft_365_%282022%29.svg.png" alt="Microsoft 365" title="Microsoft 365" class="tech-icon" onerror="this.src='https://api.iconify.design/logos:microsoft-icon.svg'" />
-                    <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="Google Gemini" title="Google Gemini" class="tech-icon" />
                 </div>
             </section>
 
-            <!-- SECCIÓN 5: EXPERIENCIA & AGENCIA -->
+            <!-- SECCIÓN 5: EXPERIENCIA Y AGENCIA -->
             <section class="section" id="experiencia">
                 <div class="section-header">
-                    <h2 class="section-title">Experiencia & Agencia</h2>
-                    <p class="section-subtitle">De mi trayectoria técnica hacia la creación de soluciones de software.</p>
+                    <h2 class="section-title">Experiencia y Agencia</h2>
+                    <p class="section-subtitle">Un recorrido real: desde la industria y el análisis de datos hasta el desarrollo de software.</p>
                 </div>
                 
                 <div class="hero-cta-card">
-                    <img src="imagenes/lycodelife.png" alt="LyCodeLife Agencia" onerror="this.src='https://placehold.co/400x300/0a1813/10b981?text=LyCodeLife'">
+                    <img src="imagenes/lycodelife.png" alt="LyCodeLife Agencia" onerror="this.src='https://placehold.co/400x300/0a192f/f5f4ee?text=LyCodeLife'">
                     <div class="hero-cta-content">
                         <h3>Descubre LyCodeLife</h3>
-                        <p>Además de mi perfil técnico, dirijo mi propia agencia, donde ofrezco <strong>servicios de desarrollo de software a medida</strong>. Explora demos interactivas y descubre cómo transformo ideas en tecnología funcional.</p>
+                        <p>Además de mi trabajo técnico personal, dirijo mi propia agencia donde convertimos problemas diarios en <strong>software a medida, automatizaciones útiles y computadoras rápidas</strong>. Te invito a conocer las soluciones prácticas que construimos con dedicación.</p>
                         <a href="https://lycodelife.github.io/LycodeLife/" target="_blank" class="btn-glow" title="Visitar la web de LyCodeLife">
                             Visitar LyCodeLife
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left:4px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
@@ -1261,19 +1623,29 @@
                 <div class="timeline-container">
                     <div class="timeline">
                         <div class="timeline-item">
-                            <h3 class="timeline-title">Fundador & Lead Developer</h3>
+                            <h3 class="timeline-title">Fundador y Desarrollador Principal</h3>
                             <a href="https://lycodelife.github.io/LycodeLife/" target="_blank" class="timeline-company" title="Enlace a LyCodeLife">LycodeLife ↗</a>
-                            <p class="timeline-desc">Arquitectura de software, desarrollo Full-Stack y automatización de procesos internos.</p>
+                            <p class="timeline-desc">Diseño de programas, desarrollo completo y optimización de sistemas. Entre los desarrollos más queridos están <strong>Danika</strong> (personalización segura y local en Source 2), <strong>Lyra Lazuli</strong> (organizador y acelerador de juegos en Windows) y <strong>WhatsApp Life</strong> (automatización cuidada y con pausas humanas).</p>
                         </div>
                         <div class="timeline-item">
-                            <h3 class="timeline-title">Consultor Independiente</h3>
-                            <span class="timeline-company" style="text-decoration: none;">Proyectos Autónomos</span>
-                            <p class="timeline-desc">Desarrollo UI/UX, integración de modelos inteligentes y optimización de hardware a medida para clientes locales.</p>
+                            <h3 class="timeline-title">Analista de Datos Industrial y Desarrollador de Prueba</h3>
+                            <span class="timeline-company" style="text-decoration: none;">Centro de Innovación y Desarrollo CEMEX (Agosto 2026)</span>
+                            <p class="timeline-desc">Diagnóstico de plantas y control de mezclas bajo normas ISO 9001. Analicé más de 3,200 registros de concreto, detecté diferencias de hasta 129 kilos de cemento por metro cúbico por temas de humedad, proyecté ahorros de miles de toneladas y puse a prueba algoritmos con cámaras para medir materiales en patio.</p>
                         </div>
                         <div class="timeline-item">
-                            <h3 class="timeline-title">Asistente de Archivo</h3>
-                            <span class="timeline-company" style="text-decoration: none;">Ministerio del Ambiente (Jóvenes en Acción)</span>
-                            <p class="timeline-desc">En febrero de 2025 participé en el programa Jóvenes en Acción. Trabajé en el área de archivo, donde desarrollé habilidades para gestionar, crear y ordenar documentos históricos de gran importancia.</p>
+                            <h3 class="timeline-title">Líder de Desarrollo y Gestión de Proyecto</h3>
+                            <span class="timeline-company" style="text-decoration: none;">Hackathon UTEL y Tiendanube (Marzo 2026)</span>
+                            <p class="timeline-desc">Coordinación de equipo multidisciplinario en un entorno contra reloj. Lideré el desarrollo de la interfaz y la estructura en GitHub para dar vida a <strong>NubIA</strong>, un asistente virtual pensado para ayudar a quienes inician su primer negocio en línea.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="timeline-title">Consultor Tecnológico Independiente</h3>
+                            <span class="timeline-company" style="text-decoration: none;">Proyectos Autónomos y Clientes Locales</span>
+                            <p class="timeline-desc">Creación de pequeños programas a medida, conexión de herramientas con inteligencia artificial para negocios locales y diagnóstico físico de computadoras para dejarlas funcionando al máximo de su capacidad.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="timeline-title">Gestión de Datos y Archivo Histórico</h3>
+                            <span class="timeline-company" style="text-decoration: none;">Ministerio del Ambiente (MAATE / Jóvenes en Acción)</span>
+                            <p class="timeline-desc">Trabajo de rescate y digitalización de documentos que datan desde 1850. Convertimos montañas de expedientes antiguos en papel a bases de datos organizadas, seguras y fáciles de consultar por cualquier persona autorizada.</p>
                         </div>
                     </div>
                 </div>
@@ -1283,26 +1655,27 @@
             <section class="section" id="testimonios">
                 <div class="section-header">
                     <h2 class="section-title">Lo que dicen mis clientes</h2>
-                    <p class="section-subtitle">Reseñas reales verificadas a través de Google.</p>
+                    <p class="section-subtitle">Opiniones de personas reales en Google.</p>
                 </div>
 
                 <div class="reviews-container">
                     <div class="review-card">
-                        <!-- Icono de Google Decorativo -->
-                        <svg class="google-icon" viewBox="0 0 24 24" fill="var(--text-muted)"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        <!-- Icono monocromático en Azul Acento -->
+                        <svg class="google-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/>
+                        </svg>
                         
                         <div class="review-stars">★★★★★</div>
                         <p class="review-text">"Una experiencia increíble, me ahorré horas y soy más productiva gracias a LyCodeLife recomendadisimoooo"</p>
                         
                         <div class="review-author">
-                            <img src="imagenes/g/1.png" alt="Reseña de Dayana Velasco en Google" class="review-avatar" onerror="this.src='https://placehold.co/100x100/10b981/ffffff?text=D'">
+                            <img src="imagenes/g/1.png" alt="Reseña de Dayana Velasco en Google" class="review-avatar" onerror="this.src='https://placehold.co/100x100/0a192f/f5f4ee?text=D'">
                             <div class="review-author-info">
                                 <strong>Dayana Velasco</strong>
                                 <span>1 opinión en Google</span>
                             </div>
                         </div>
 
-                        <!-- Botones de Google -->
                         <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
                             <a href="https://www.google.com/search?q=LyCodeLife" target="_blank" class="btn-outline" style="margin-top: 0; padding: 8px 16px; font-size: 0.85rem;" title="Ver opiniones en Google">Ver en Google</a>
                             <a href="https://www.google.com/search?q=LyCodeLife" target="_blank" class="btn-outline" style="margin-top: 0; padding: 8px 16px; font-size: 0.85rem; border-color: var(--text-muted); color: var(--text-muted);" title="Añadir una opinión a LyCodeLife">Dejar una opinión</a>
@@ -1311,66 +1684,63 @@
                 </div>
             </section>
 
-            <!-- SECCIÓN 7: CALL TO ACTION FINAL -->
-            <section class="section" style="margin-bottom: 60px;">
-                <div class="cta-box">
-                    <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.04em; color: var(--text-main);">¿Trabajamos juntos?</h2>
-                    <p style="color: var(--text-muted); margin-bottom: 40px; font-size: 1.1rem; line-height: 1.6;">Hablemos de código, automatización o cómo optimizar la tecnología de tus proyectos.</p>
-                    <button class="btn btn-primary" style="width: 100%; justify-content: center; padding: 20px;" onclick="openContact()">Contactar ahora</button>
-                </div>
-            </section>
-
             <!-- SECCIÓN 8: PREGUNTAS FRECUENTES -->
             <section class="section" id="faq">
                 <div class="section-header">
                     <h2 class="section-title">Preguntas Frecuentes</h2>
-                    <p class="section-subtitle">Respuestas claras para ayudarte a dar el siguiente paso tecnológico.</p>
+                    <p class="section-subtitle">Respuestas claras y sinceras para ayudarte a decidir.</p>
                 </div>
                 
                 <div class="faq-container">
-                    <!-- Pregunta 1 -->
                     <details class="faq-item">
-                        <summary class="faq-summary">¿Qué diferencia a LyCodeLife de las demás agencias de desarrollo?</summary>
+                        <summary class="faq-summary">¿Qué diferencia a LyCodeLife de otras opciones de desarrollo?</summary>
                         <div class="faq-content">
-                            La diferencia se percibe en que trabajamos de manera responsable, directa y, sobre todo, <strong>desarrollamos herramientas de software personalizadas exclusivamente para tus necesidades</strong>. No usamos plantillas genéricas; analizamos tu modelo de negocio y construimos soluciones a medida que resuelven problemas reales.
+                            La diferencia está en la cercanía y el compromiso. No vendo plantillas armadas ni soluciones genéricas. Me siento a entender cómo trabajas en el día a día para crear un software a la medida exacta de tus necesidades, con código limpio y sin sorpresas.
                         </div>
                     </details>
 
-                    <!-- Pregunta 2 -->
                     <details class="faq-item">
-                        <summary class="faq-summary">¿Cómo puede la automatización mejorar mi empresa?</summary>
+                        <summary class="faq-summary">¿Cómo me ayuda la automatización en mi negocio?</summary>
                         <div class="faq-content">
-                            En LyCodeLife creamos flujos de automatización que eliminan tareas manuales repetitivas. Esto permite procesar datos en segundos, optimizar la atención al cliente y reducir costos operativos, liberando tiempo para que tu equipo se enfoque en el trabajo más importante.
+                            Te quita de encima las tareas aburridas y repetitivas que consumen horas: pasar datos de un archivo a otro, mandar mensajes manuales o armar reportes. Al automatizarlo, ahorras tiempo, evitas equivocaciones por cansancio y puedes concentrarte en atender mejor a tus clientes.
                         </div>
                     </details>
 
-                    <!-- Pregunta 3 -->
                     <details class="faq-item">
-                        <summary class="faq-summary">¿Qué tipo de empresas se benefician de sus servicios de software a medida?</summary>
+                        <summary class="faq-summary">¿Qué tipo de proyectos o negocios pueden trabajar contigo?</summary>
                         <div class="faq-content">
-                            Ayudamos principalmente a pymes, startups y empresas tradicionales que buscan la transformación digital, desarrollando desde plataformas web y sistemas de gestión interna hasta integraciones complejas de API.
+                            Desde pequeños negocios y emprendedores que quieren dar el salto a lo digital, hasta empresas que necesitan ordenar sus sistemas internos, bases de datos o integrar distintas herramientas web.
                         </div>
                     </details>
 
-                    <!-- Pregunta 4 -->
                     <details class="faq-item">
-                        <summary class="faq-summary">¿Cuánto tiempo toma construir una solución tecnológica personalizada?</summary>
+                        <summary class="faq-summary">¿Cuánto tiempo toma tener listo un proyecto?</summary>
                         <div class="faq-content">
-                            El cronograma depende de la complejidad de la herramienta tecnológica. Sin embargo, aplicamos metodologías ágiles que nos permiten lanzar un Producto Mínimo Viable (MVP) funcional en pocas semanas, asegurando que empieces a ver valor rápidamente sin esperas interminables.
+                            Depende de lo que necesites, pero mi enfoque es entregarte resultados funcionales desde las primeras semanas. Prefiero que tengas una versión base lista para usar y probar rápido, antes que hacerte esperar meses por una entrega final.
                         </div>
                     </details>
 
-                    <!-- Pregunta 5 -->
                     <details class="faq-item">
-                        <summary class="faq-summary">¿Ofrecen soporte continuo y optimización de hardware después del desarrollo?</summary>
+                        <summary class="faq-summary">¿Das soporte y ayuda técnica después de terminar el desarrollo?</summary>
                         <div class="faq-content">
-                            Sí. Entendemos que el software necesita una base sólida. Además del desarrollo de la aplicación, brindamos mantenimiento continuo, soporte técnico y optimización de infraestructura de hardware para garantizar que tu ecosistema digital sea seguro, rápido y escalable a largo plazo.
+                            Totalmente. El software no se abandona cuando se entrega. Ofrezco acompañamiento para resolver dudas, realizar ajustes con el uso y revisar que tus computadoras y servidores funcionen estables y seguros.
                         </div>
                     </details>
                 </div>
             </section>
 
-            <footer style="padding-top: 50px; font-size: 1rem; color: var(--text-muted); text-align: center; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 40px;">
+            <!-- TECNOLOGÍAS Y HERRAMIENTAS -->
+            <div class="tech-container" style="margin-top: 60px; margin-bottom: 20px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" title="Python" class="tech-icon" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" title="Linux" class="tech-icon" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg" alt="Windows" title="Windows" class="tech-icon" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" title="VS Code" class="tech-icon" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud" title="Google Cloud" class="tech-icon" />
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23f25022' d='M1 1h10v10H1z'/%3E%3Cpath fill='%237fba00' d='M13 1h10v10H13z'/%3E%3Cpath fill='%2300a4ef' d='M1 13h10v10H1z'/%3E%3Cpath fill='%23ffb900' d='M13 13h10v10H13z'/%3E%3C/svg%3E" alt="Microsoft 365" title="Microsoft 365" class="tech-icon" />
+                <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="Google Gemini" title="Google Gemini" class="tech-icon" />
+            </div>
+
+            <footer style="padding-top: 50px; font-size: 1rem; color: var(--text-muted); text-align: center; border-top: 1px solid var(--border-subtle); margin-top: 40px;">
                 <p>© 2026 Shordy Simbaña. La informática es una nueva forma de vida.</p>
             </footer>
         </div>
@@ -1392,10 +1762,10 @@
         <div class="form-box" onclick="event.stopPropagation()">
             <span class="close-btn" onclick="closeModal('contactModal', 'force')">&times;</span>
             <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.04em; color: var(--text-main);">Hola.</h2>
-            <p style="color: var(--text-muted); margin-bottom: 40px; font-size: 1.1rem;">Déjame tu correo y te escribo lo antes posible.</p>
+            <p style="color: var(--text-muted); margin-bottom: 40px; font-size: 1.1rem;">Déjame tu correo y te respondo lo antes posible.</p>
             
-            <input type="email" id="cEmail" class="form-input" placeholder="Tu correo" required>
-            <input type="text" id="cMsg" class="form-input" placeholder="¿En qué te puedo ayudar?" required>
+            <input type="email" id="cEmail" class="form-input" placeholder="Tu correo electrónico" required>
+            <input type="text" id="cMsg" class="form-input" placeholder="¿En qué te puedo colaborar?" required>
             
             <button onclick="sendMail()" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 16px;">Enviar mensaje</button>
         </div>
@@ -1404,13 +1774,12 @@
     <!-- Modal Hoja de Vida -->
     <div id="resumeModal" class="modal resume-modal" onclick="closeModal('resumeModal', event)">
         <div style="width: 100%; max-width: 850px; display: flex; flex-direction: column;" onclick="event.stopPropagation()">
-            <!-- Controles Flotantes para el PDF -->
             <div class="resume-controls">
                 <button onclick="downloadPDF()" class="btn-glow" style="margin: 0; padding: 10px 24px;">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                     Descargar en PDF
                 </button>
-                <span class="close-btn" onclick="closeModal('resumeModal', 'force')" style="position: static; font-size: 40px; color: #fff;">&times;</span>
+                <span class="close-btn" onclick="closeModal('resumeModal', 'force')" style="position: static; font-size: 40px; color: var(--bg-page);">&times;</span>
             </div>
             
             <!-- Documento Aislado para el PDF -->
@@ -1419,32 +1788,31 @@
                     <h2>Shordy Simbaña</h2>
                     <p>Desarrollador de Software | Estudiante Ing. en Sistemas</p>
                     <div class="resume-contact">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> shordy46.58@gmail.com</span>
-                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> </span>
-                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> linkedin.com/in/shordy</span>
-                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> github.com/ShordyX</span>
-                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> shordyea.github.io</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1d63ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> shordy46.58@gmail.com</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1d63ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> </span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1d63ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> linkedin.com/in/shordy</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1d63ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> github.com/ShordyX</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1d63ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> shordyea.github.io</span>
                     </div>
                 </div>
 
                 <div class="resume-body">
-                    <!-- Columna Izquierda (32%) -->
                     <div class="resume-column-left">
                         <div class="resume-section">
                             <h3>Perfil Profesional</h3>
-                            <p class="resume-item-desc">Para mí, una computadora es más que una máquina; es un aliado para construir el futuro. Me apasiona conectar ideas sueltas y transformarlas en soluciones de software eficientes. Tengo la visión para ver más allá y la creatividad para hacer que la tecnología trabaje a tu favor.</p>
+                            <p class="resume-item-desc">Para mí, una computadora es una aliada para resolver problemas cotidianos. Me gusta tomar ideas sueltas y convertirlas en herramientas digitales prácticas, que ahorren tiempo y funcionen sin rodeos.</p>
                         </div>
                         
                         <div class="resume-section">
-                            <h3>Servicios & Tech</h3>
+                            <h3>Servicios y Tecnologías</h3>
                             <div class="resume-skills-grid">
                                 <div>
                                     <strong style="color: var(--accent); font-size: 0.9rem;">Especialidades:</strong>
                                     <ul class="resume-list">
-                                        <li>Desarrollo de Software Full Stack</li>
+                                        <li>Desarrollo de Software Web</li>
                                         <li>Automatización de Procesos</li>
-                                        <li>Integración de IA</li>
-                                        <li>Soporte y Optimización Hardware</li>
+                                        <li>Integración de IA Práctica</li>
+                                        <li>Mantenimiento y Ajuste de Equipos</li>
                                     </ul>
                                 </div>
                                 <div>
@@ -1455,32 +1823,32 @@
                         </div>
 
                         <div class="resume-section">
-                            <h3>Educación & Cert.</h3>
+                            <h3>Educación y Certificaciones</h3>
                             <ul class="resume-list" style="padding-left: 0; list-style: none;">
-                                <li style="margin-bottom: 4px;"><strong>Ing. en Sistemas Computacionales</strong><br><span style="color: #6b7280;">UTEL Universidad (Estudiante)</span></li>
-                                <li style="margin-bottom: 4px;"><strong>SEO para IA y Google</strong><br><span style="color: #6b7280;">BIG School / BIGSEO (2026)</span></li>
-                                <li style="margin-bottom: 4px;"><strong>Hackathon: Innovación E-commerce</strong><br><span style="color: #6b7280;">UTEL & Tiendanube (2026)</span></li>
-                                <li style="margin-bottom: 4px;"><strong>Informática Forense</strong><br><span style="color: #6b7280;">Academia Progenios (2025)</span></li>
-                                <li style="margin-bottom: 4px;"><strong>Customer Experience y Asistencia</strong><br><span style="color: #6b7280;">Remotos Academy / CertiProf (2025)</span></li>
-                                <li style="margin-bottom: 4px;"><strong>Intro. to Bionic Prostheses</strong><br><span style="color: #6b7280;">P4H Bionics (2024)</span></li>
-                                <li><strong>Gestión de RAEE (Parte 1 y 2)</strong><br><span style="color: #6b7280;">Ministerio del Ambiente (2025)</span></li>
+                                <li style="margin-bottom: 4px;"><strong>Ing. en Sistemas Computacionales</strong><br><span style="color: var(--text-muted);">UTEL Universidad (Estudiante)</span></li>
+                                <li style="margin-bottom: 4px;"><strong>Programa Empresarial CEMEX</strong><br><span style="color: var(--text-muted);">Centro de Innovación y Desarrollo (2026)</span></li>
+                                <li style="margin-bottom: 4px;"><strong>SEO para IA y Google</strong><br><span style="color: var(--text-muted);">BIG School / BIGSEO (2026)</span></li>
+                                <li style="margin-bottom: 4px;"><strong>Hackathon: Innovación E-commerce</strong><br><span style="color: var(--text-muted);">UTEL y Tiendanube (2026)</span></li>
+                                <li style="margin-bottom: 4px;"><strong>Informática Forense</strong><br><span style="color: var(--text-muted);">Academia Progenios (2025)</span></li>
+                                <li style="margin-bottom: 4px;"><strong>Customer Experience y Asistencia</strong><br><span style="color: var(--text-muted);">Remotos Academy / CertiProf (2025)</span></li>
+                                <li style="margin-bottom: 4px;"><strong>Intro. a Prótesis Biónicas</strong><br><span style="color: var(--text-muted);">P4H Bionics (2024)</span></li>
+                                <li><strong>Gestión de RAEE (Parte 1 y 2)</strong><br><span style="color: var(--text-muted);">Ministerio del Ambiente (2025)</span></li>
                             </ul>
                         </div>
                     </div>
 
-                    <!-- Columna Derecha (Resto) -->
                     <div class="resume-column-right">
                         <div class="resume-section">
                             <h3>Experiencia</h3>
                             <div class="resume-item">
                                 <div class="resume-item-header">
                                     <div>
-                                        <div class="resume-item-title">Fundador & Lead Developer</div>
+                                        <div class="resume-item-title">Fundador y Desarrollador Principal</div>
                                         <div class="resume-item-subtitle">LycodeLife</div>
                                     </div>
                                     <div class="resume-item-date">Presente</div>
                                 </div>
-                                <p class="resume-item-desc">Arquitectura de software, desarrollo Full-Stack y automatización de procesos internos.</p>
+                                <p class="resume-item-desc">Desarrollo de aplicaciones, automatización de tareas y creación de herramientas a medida.</p>
                             </div>
                             <div class="resume-item">
                                 <div class="resume-item-header">
@@ -1490,7 +1858,7 @@
                                     </div>
                                     <div class="resume-item-date">Presente</div>
                                 </div>
-                                <p class="resume-item-desc">Desarrollo UI/UX, integración de modelos inteligentes y optimización de hardware a medida para clientes locales.</p>
+                                <p class="resume-item-desc">Desarrollo visual, integración de asistentes inteligentes y optimización de computadoras para clientes locales.</p>
                             </div>
                             <div class="resume-item">
                                 <div class="resume-item-header">
@@ -1500,7 +1868,7 @@
                                     </div>
                                     <div class="resume-item-date">Feb 2025</div>
                                 </div>
-                                <p class="resume-item-desc">Trabajé en el área de archivo, desarrollando habilidades para gestionar, crear y ordenar documentos históricos de gran importancia.</p>
+                                <p class="resume-item-desc">Trabajo con expedientes antiguos, aprendiendo a catalogar, ordenar y preservar documentos históricos con cuidado.</p>
                             </div>
                         </div>
 
@@ -1509,42 +1877,65 @@
                             <div class="resume-item">
                                 <div class="resume-item-header">
                                     <div>
-                                        <div class="resume-item-title">WhatsApp Life (by LyCodeLife)</div>
-                                        <div class="resume-item-subtitle">Automatización de Procesos & Sistema Anti-Ban</div>
+                                        <div class="resume-item-title">Danika</div>
+                                        <div class="resume-item-subtitle">Motor de Modding en Source 2 y Manejo de Recursos</div>
+                                    </div>
+                                    <div class="resume-item-date">Destacado</div>
+                                </div>
+                                <ul class="resume-list">
+                                    <li>Ingeniería en Source 2 para probar y cambiar skins de forma completamente local.</li>
+                                    <li>Flujo de trabajo seguro que no interfiere con partidas ni con la red del juego.</li>
+                                </ul>
+                            </div>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <div>
+                                        <div class="resume-item-title">CEMEX — Control y Prueba de Mezclas</div>
+                                        <div class="resume-item-subtitle">Análisis de Datos y Prueba de Visión por Computadora</div>
+                                    </div>
+                                    <div class="resume-item-date">Ago 2026</div>
+                                </div>
+                                <ul class="resume-list">
+                                    <li>Análisis de 3,274 registros identificando desvíos de hasta 129 kg/m³ en cemento por temas de humedad.</li>
+                                    <li>Prueba funcional para estimar volumen de agregados con cámaras bajo normas ISO 9001.</li>
+                                </ul>
+                            </div>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <div>
+                                        <div class="resume-item-title">WhatsApp Life (por LyCodeLife)</div>
+                                        <div class="resume-item-subtitle">Automatización Práctica y Protección de Número</div>
                                     </div>
                                     <div class="resume-item-date">Reciente</div>
                                 </div>
                                 <ul class="resume-list">
-                                    <li>Automatización de envíos masivos en WhatsApp sin utilizar API.</li>
-                                    <li>Manejo de secuencias de mensajes con soporte multimedia total.</li>
-                                    <li>Importación de contactos desde bases de datos e implementación de plantillas personalizadas.</li>
+                                    <li>Envíos organizados en WhatsApp Web sin depender de pagos por API oficial.</li>
+                                    <li>Tiempos variables entre mensajes para cuidar la cuenta y mandar fotos y textos juntos.</li>
                                 </ul>
                             </div>
                             <div class="resume-item">
                                 <div class="resume-item-header">
                                     <div>
                                         <div class="resume-item-title">Hackathon - UTEL / Tiendanube</div>
-                                        <div class="resume-item-subtitle">Lead Developer & Project Manager</div>
+                                        <div class="resume-item-subtitle">Líder de Desarrollo y Gestión de Proyecto</div>
                                     </div>
                                     <div class="resume-item-date">Marzo 2026</div>
                                 </div>
                                 <ul class="resume-list">
-                                    <li>Liderazgo técnico en frontend y arquitectura asegurando la calidad del código.</li>
-                                    <li>Uso de herramientas como Gemini CLI para agilizar el desarrollo y la toma de decisiones bajo presión.</li>
-                                    <li>Diseño de la arquitectura de "NubIA", asistente inteligente para emprendedores.</li>
+                                    <li>Coordinación del equipo técnico y diseño del prototipo funcional a tiempo.</li>
+                                    <li>Estructura de "NubIA", asistente pensado para guiar a nuevos emprendedores.</li>
                                 </ul>
                             </div>
                             <div class="resume-item">
                                 <div class="resume-item-header">
                                     <div>
                                         <div class="resume-item-title">Digitalización Histórica - MAATE</div>
-                                        <div class="resume-item-subtitle">Gestión de Datos & Archivo</div>
+                                        <div class="resume-item-subtitle">Gestión de Datos y Archivo</div>
                                     </div>
                                     <div class="resume-item-date">Proyecto (4 meses)</div>
                                 </div>
                                 <ul class="resume-list">
-                                    <li>Rescate patrimonial y digitalización de documentos que datan de 1850.</li>
-                                    <li>Construcción de base de datos consolidando registros e historiales de vida.</li>
+                                    <li>Rescate y orden de expedientes patrimoniales en bases de datos digitales.</li>
                                 </ul>
                             </div>
                         </div>
@@ -1555,38 +1946,36 @@
     </div>
 
     <script>
-        // === LÓGICA DE LA HOJA DE VIDA (PDF & MODAL) ===
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+
+        // === LÓGICA DE LA HOJA DE VIDA (PDF Y MODAL) ===
         function openResumeModal() {
             document.getElementById('resumeModal').classList.add('active');
         }
 
         function downloadPDF() {
-            // 1. Seleccionamos el documento original
             const originalElement = document.getElementById('resumeDocument');
-            
-            // 2. Creamos un CLON EXACTO para manipularlo sin dañar tu vista en el celular
             const element = originalElement.cloneNode(true);
             
-            // 3. Le añadimos una clase especial que anula el @media query del celular y fuerza la cuadrícula de PC
             element.classList.add('pdf-export-mode'); 
             
-            // 4. FIX: Envolver el clon en un contenedor posicionado absolutamente en la esquina superior izquierda.
-            // Esto evita que los márgenes del body o el scroll en el móvil distorsionen las coordenadas de la foto.
             const tempContainer = document.createElement('div');
             tempContainer.style.position = 'absolute';
-            tempContainer.style.left = '0'; // Forzar posición a la izquierda sin valores negativos
+            tempContainer.style.left = '0';
             tempContainer.style.top = '0';
             tempContainer.style.width = '794px'; 
             tempContainer.style.minWidth = '794px'; 
-            tempContainer.style.zIndex = '-9999'; // Lo enviamos detrás de todo
-            tempContainer.style.opacity = '0';    // Lo hacemos invisible sin usar display:none (para que html2canvas lo lea)
+            tempContainer.style.zIndex = '-9999';
+            tempContainer.style.opacity = '0';
             tempContainer.style.pointerEvents = 'none';
-            tempContainer.style.background = '#ffffff';
+            tempContainer.style.background = '#f5f4ee';
             
             tempContainer.appendChild(element);
             document.body.appendChild(tempContainer);
             
-            // Opciones para la librería html2pdf
             const opt = {
                 margin:       0,
                 filename:     'Hoja_de_Vida_Shordy_Simbana.pdf',
@@ -1595,24 +1984,20 @@
                     scale: 2, 
                     useCORS: true, 
                     letterRendering: true,
-                    // FIX: Configuraciones clave para evitar el corte o márgenes fantasma en celulares
                     scrollY: 0,
-                    scrollX: 0, // Ignorar si el usuario ha hecho scroll hacia los lados
-                    x: 0,       // Indicar explícitamente que la "foto" arranca desde el pixel 0 en X
-                    y: 0,       // Y arranca desde el pixel 0 en Y
-                    windowWidth: 794, // Simular que estamos en un monitor
-                    width: 794        // Obligar al lienzo interno a medir exactamente 794px de ancho
+                    scrollX: 0,
+                    x: 0,
+                    y: 0,
+                    windowWidth: 794,
+                    width: 794
                 },
                 jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
             
-            // Generamos el PDF usando el CLON configurado como PC
             html2pdf().set(opt).from(element).save().then(() => {
-                // Al terminar, eliminamos el clon del código sin dejar rastro
                 document.body.removeChild(tempContainer);
                 console.log("PDF descargado correctamente desde cualquier dispositivo.");
             }).catch(err => {
-                // En caso de error, también limpiar el DOM
                 document.body.removeChild(tempContainer);
                 console.error("Error al generar PDF: ", err);
             });
@@ -1642,7 +2027,7 @@
                 
                 setTimeout(() => {
                     previewImg.src = newSrc;
-                    previewImg.onerror = () => { previewImg.src = 'https://placehold.co/600x400/0a1813/10b981?text=Certificado'; };
+                    previewImg.onerror = () => { previewImg.src = 'https://placehold.co/600x400/0a192f/f5f4ee?text=Certificado'; };
                     previewImg.style.opacity = '1';
                 }, 150);
             });
@@ -1657,7 +2042,7 @@
                 btn.innerText = '- Ver menos';
             } else {
                 hiddens.forEach(el => { el.style.display = 'none'; });
-                btn.innerText = '+ Ver 4 credenciales más'; // Actualizado el número de credenciales
+                btn.innerText = '+ Ver 4 credenciales más';
             }
         }
 
@@ -1666,7 +2051,6 @@
             const modal = document.getElementById('imageModal');
             const img = document.getElementById('expandedImg');
             img.src = src;
-            // Ocultamos las flechas ya que es solo 1 imagen
             document.getElementById('prevBtn').style.display = 'none';
             document.getElementById('nextBtn').style.display = 'none';
             modal.classList.add('active');
@@ -1679,7 +2063,6 @@
             const modal = document.getElementById('imageModal');
             const img = document.getElementById('expandedImg');
             img.src = src;
-            // Aseguramos que las flechas se muestren
             document.getElementById('prevBtn').style.display = 'block';
             document.getElementById('nextBtn').style.display = 'block';
             modal.classList.add('active');
@@ -1692,14 +2075,13 @@
             const modal = document.getElementById('imageModal');
             const img = document.getElementById('expandedImg');
             img.src = previewImg.src;
-            // Aseguramos que las flechas se muestren
             document.getElementById('prevBtn').style.display = 'block';
             document.getElementById('nextBtn').style.display = 'block';
             modal.classList.add('active');
         }
 
         function navGallery(direction, event) {
-            event.stopPropagation(); // Evita que se cierre el modal al hacer click en las flechas
+            event.stopPropagation();
             currentGalleryIndex += direction;
             
             if (currentGalleryIndex < 0) currentGalleryIndex = certItems.length - 1;
@@ -1722,13 +2104,178 @@
         function sendMail() {
             const email = document.getElementById('cEmail').value;
             const msg = document.getElementById('cMsg').value;
-            if(!email || !msg) return alert("Completa todos los campos, por favor.");
+            if(!email || !msg) return alert("Por favor completa tu correo y el mensaje.");
             
             const subject = encodeURIComponent("Contacto Portafolio");
             const body = encodeURIComponent(`De: ${email}\n\nMensaje:\n${msg}`);
             window.location.href = `mailto:shordy46.58@gmail.com?subject=${subject}&body=${body}`;
             closeModal('contactModal', 'force');
         }
+
+        // === MOTOR DE FÍSICA Y PARTICULAS ANTIGRAVITY (OPTIMIZADO PARA LECTURA) ===
+        (function initAntigravity() {
+            const canvas = document.getElementById('antigravity-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+
+            let width = 0;
+            let height = 0;
+            let dpr = window.devicePixelRatio || 1;
+            let particles = [];
+
+            const mouse = {
+                x: -9999,
+                y: -9999,
+                prevX: -9999,
+                prevY: -9999,
+                vx: 0,
+                vy: 0,
+                radius: 190
+            };
+
+            // Tonos sutiles y translúcidos que no compiten con la tipografía
+            const colors = [
+                'rgba(29, 99, 255, 0.45)',
+                'rgba(29, 99, 255, 0.25)',
+                'rgba(10, 25, 47, 0.18)',
+                'rgba(10, 25, 47, 0.10)',
+                'rgba(29, 99, 255, 0.35)'
+            ];
+
+            function resize() {
+                width = window.innerWidth;
+                height = window.innerHeight;
+                dpr = window.devicePixelRatio || 1;
+                canvas.width = Math.floor(width * dpr);
+                canvas.height = Math.floor(height * dpr);
+                ctx.setTransform(1, 0, 0, 1, 0, 0);
+                ctx.scale(dpr, dpr);
+                createParticles();
+            }
+
+            function createParticles() {
+                particles = [];
+                // Mayor separación para un fondo aireado y limpio
+                const spacing = Math.max(68, Math.min(88, Math.floor(Math.sqrt((width * height) / 180))));
+                const cols = Math.ceil(width / spacing);
+                const rows = Math.ceil(height / spacing);
+                const centerX = width / 2;
+                const centerY = height / 2;
+
+                for (let r = 0; r < rows; r++) {
+                    for (let c = 0; c < cols; c++) {
+                        const jitterX = (Math.random() - 0.5) * (spacing * 0.7);
+                        const jitterY = (Math.random() - 0.5) * (spacing * 0.7);
+                        const originX = c * spacing + spacing / 2 + jitterX;
+                        const originY = r * spacing + spacing / 2 + jitterY;
+
+                        const dx = originX - centerX;
+                        const dy = originY - centerY;
+                        const distFromCenter = Math.sqrt(dx * dx + dy * dy);
+
+                        const baseAngle = Math.atan2(dy, dx) + (Math.PI / 4) * (distFromCenter / Math.max(width, height));
+                        const length = 5 + Math.random() * 4;
+                        const thickness = 1.4 + Math.random() * 0.6;
+                        const color = colors[Math.floor(Math.random() * colors.length)];
+
+                        particles.push({
+                            x: originX,
+                            y: originY,
+                            originX: originX,
+                            originY: originY,
+                            vx: 0,
+                            vy: 0,
+                            length: length,
+                            thickness: thickness,
+                            color: color,
+                            baseAngle: baseAngle,
+                            angle: baseAngle,
+                            floatOffset: Math.random() * Math.PI * 2,
+                            floatSpeed: 0.01 + Math.random() * 0.015
+                        });
+                    }
+                }
+            }
+
+            window.addEventListener('resize', resize);
+            window.addEventListener('mousemove', function(e) {
+                mouse.vx = e.clientX - mouse.prevX;
+                mouse.vy = e.clientY - mouse.prevY;
+                mouse.prevX = e.clientX;
+                mouse.prevY = e.clientY;
+                mouse.x = e.clientX;
+                mouse.y = e.clientY;
+            });
+
+            window.addEventListener('mouseleave', function() {
+                mouse.x = -9999;
+                mouse.y = -9999;
+            });
+
+            function animate() {
+                ctx.clearRect(0, 0, width, height);
+
+                const count = particles.length;
+                for (let i = 0; i < count; i++) {
+                    const p = particles[i];
+
+                    const homeDx = p.originX - p.x;
+                    const homeDy = p.originY - p.y;
+                    p.vx += homeDx * 0.035;
+                    p.vy += homeDy * 0.035;
+
+                    p.floatOffset += p.floatSpeed;
+                    p.vx += Math.cos(p.floatOffset) * 0.03;
+                    p.vy += Math.sin(p.floatOffset) * 0.03;
+
+                    const mouseDx = p.x - mouse.x;
+                    const mouseDy = p.y - mouse.y;
+                    const mouseDist = Math.sqrt(mouseDx * mouseDx + mouseDy * mouseDy);
+
+                    if (mouseDist < mouse.radius && mouseDist > 0.001) {
+                        const factor = (1 - mouseDist / mouse.radius);
+                        const force = factor * factor * 12;
+                        const nx = mouseDx / mouseDist;
+                        const ny = mouseDy / mouseDist;
+
+                        p.vx += nx * force;
+                        p.vy += ny * force;
+
+                        p.vx += mouse.vx * factor * 0.2;
+                        p.vy += mouse.vy * factor * 0.2;
+                    }
+
+                    p.vx *= 0.88;
+                    p.vy *= 0.88;
+                    p.x += p.vx;
+                    p.y += p.vy;
+
+                    const speed = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
+                    if (speed > 0.15) {
+                        p.angle = Math.atan2(p.vy, p.vx);
+                    } else {
+                        p.angle += (p.baseAngle - p.angle) * 0.05;
+                    }
+
+                    ctx.save();
+                    ctx.translate(p.x, p.y);
+                    ctx.rotate(p.angle);
+                    ctx.strokeStyle = p.color;
+                    ctx.lineWidth = p.thickness;
+                    ctx.lineCap = 'round';
+                    ctx.beginPath();
+                    ctx.moveTo(-p.length / 2, 0);
+                    ctx.lineTo(p.length / 2, 0);
+                    ctx.stroke();
+                    ctx.restore();
+                }
+
+                requestAnimationFrame(animate);
+            }
+
+            resize();
+            requestAnimationFrame(animate);
+        })();
     </script>
 </body>
 </html>
