@@ -6,7 +6,7 @@
     
     <!-- === OPTIMIZACIÓN SEO AVANZADA === -->
     <title>Shordy | Portafolio Digital</title>
-    <meta name="description" content="Portafolio de Shordy Anderson Simbaña Vega, desarrollador de software y estudiante de Ingeniería en Sistemas en Quito, Ecuador.">
+    <meta name="description" content="Portafolio de Shordy Anderson Simbaña Vega, Ingeniero en Sistemas y desarrollador de software en Quito, Ecuador.">
     <meta name="keywords" content="Shordy, Shordy Simbaña, Shordy Anderson Simbaña Vega, Desarrollador de software, Programador, Portafolio, LyCodeLife, Ecuador, Quito">
     <meta name="author" content="Shordy Anderson Simbaña Vega">
     <meta name="theme-color" content="#f5f4ee">
@@ -19,8 +19,8 @@
     <meta property="og:title" content="Shordy | Portafolio Digital">
     <meta property="og:description" content="Portafolio personal y proyectos de desarrollo de software de Shordy Simbaña.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shordyea.github.io/">
-    <meta property="og:image" content="https://shordyea.github.io/imagenes/perfil.png"> 
+    <meta property="og:url" content="https://shordyx.github.io/Portafolio/">
+    <meta property="og:image" content="https://shordyx.github.io/Portafolio/imagenes/perfil.png">
     
     <!-- Tipografía Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +37,7 @@
       "@type": "Person",
       "name": "Shordy Anderson Simbaña Vega",
       "alternateName": "Shordy Simbaña",
-      "url": "https://shordyea.github.io/",
+      "url": "https://shordyx.github.io/Portafolio/",
       "jobTitle": "Desarrollador de Software",
       "worksFor": {
         "@type": "Organization",
@@ -144,13 +144,15 @@
 
         /* === FONDOS ORBES Y LIENZO ANTIGRAVITY === */
         #antigravity-canvas {
-            position: fixed;
+            position: absolute;
             top: 0;
             left: 0;
-            width: 100vw;
+            width: 100%;
             height: 100vh;
             z-index: -2;
             pointer-events: none;
+            -webkit-mask-image: linear-gradient(to bottom, black 0%, black 72%, transparent 100%);
+            mask-image: linear-gradient(to bottom, black 0%, black 72%, transparent 100%);
         }
         .bg-orbs { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -3; overflow: hidden; pointer-events: none; }
         .orb { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.6; mix-blend-mode: multiply; }
@@ -165,10 +167,11 @@
             top: 0;
             width: 290px;
             height: 100vh;
-            background: rgba(245, 244, 238, 0.85);
-            backdrop-filter: blur(30px);
-            -webkit-backdrop-filter: blur(30px);
-            border-right: 1px solid var(--border-subtle);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.42) 0%, rgba(245, 244, 238, 0.18) 100%);
+            backdrop-filter: blur(10px) saturate(160%);
+            -webkit-backdrop-filter: blur(10px) saturate(160%);
+            border-right: 1px solid rgba(255, 255, 255, 0.7);
+            box-shadow: 6px 0 25px rgba(10, 25, 47, 0.04), inset -1px 0 0 rgba(255, 255, 255, 0.85);
             padding: 40px 24px;
             display: flex;
             flex-direction: column;
@@ -325,8 +328,9 @@
         .hero-bg-gradient {
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to bottom, rgba(245,244,238,0.2) 0%, rgba(245,244,238,1) 100%);
+            background: transparent;
             z-index: -1;
+            pointer-events: none;
         }
 
         .hero-photo-main {
@@ -1024,16 +1028,82 @@
             box-shadow: 0 20px 60px rgba(10, 25, 47, 0.8), 0 0 50px rgba(29, 99, 255, 0.2);
             border: 1px solid rgba(29, 99, 255, 0.3);
         }
-        
-        .nav-btn {
-            position: absolute; top: 50%; transform: translateY(-50%);
-            font-size: 40px; color: var(--bg-page); cursor: pointer;
-            padding: 20px; user-select: none; transition: color 0.3s, transform 0.3s;
-            z-index: 10001;
+
+        #imageModal {
+            background: rgba(245, 244, 238, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
         }
-        .nav-btn:hover { color: var(--accent); transform: translateY(-50%) scale(1.1); }
-        .prev-btn { left: 2%; }
-        .next-btn { right: 2%; }
+
+        #imageModal .modal-content {
+            box-shadow: 0 25px 50px rgba(10, 25, 47, 0.12), 0 0 35px rgba(29, 99, 255, 0.12);
+            border: 1px solid rgba(29, 99, 255, 0.25);
+            background: #ffffff;
+        }
+
+        #imageModal .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background: rgba(245, 244, 238, 0.85);
+            border: 1px solid rgba(10, 25, 47, 0.12);
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            user-select: none;
+            box-shadow: 0 8px 25px rgba(10, 25, 47, 0.08);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 10001;
+            padding: 0;
+        }
+
+        #imageModal .nav-btn:hover {
+            background: var(--accent);
+            color: var(--bg-page);
+            border-color: var(--accent);
+            transform: translateY(-50%) scale(1.08);
+            box-shadow: 0 10px 30px rgba(29, 99, 255, 0.35);
+        }
+
+        #imageModal .prev-btn { left: 32px; }
+        #imageModal .next-btn { right: 32px; }
+
+        #imageModal .close-btn-lightbox {
+            position: absolute;
+            top: 28px;
+            right: 32px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(245, 244, 238, 0.85);
+            border: 1px solid rgba(10, 25, 47, 0.12);
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(10, 25, 47, 0.08);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 10002;
+            padding: 0;
+        }
+
+        #imageModal .close-btn-lightbox:hover {
+            background: var(--accent);
+            color: var(--bg-page);
+            border-color: var(--accent);
+            transform: scale(1.08);
+            box-shadow: 0 10px 30px rgba(29, 99, 255, 0.35);
+        }
 
         .form-box {
             background: var(--bg-page); padding: 50px; border-radius: var(--radius-lg);
@@ -1254,9 +1324,9 @@
             <img src="imagenes/perfil.png" alt="Foto de Shordy Simbaña" class="hero-photo-main" onerror="this.src='https://placehold.co/400x400/0a192f/f5f4ee?text=Shordy'">
             
             <h1 class="hero-title">Shordy Simbaña</h1>
-            <h2 class="hero-subtitle">Desarrollador de Software y Soluciones Digitales</h2>
+            <h2 class="hero-subtitle">Ingeniero en Sistemas y Desarrollador de Software</h2>
             <p class="hero-desc">
-                Estudiante de Ingeniería en Sistemas Computacionales en UTEL. Me dedico a construir programas útiles, automatizar tareas pesadas del día a día y desarrollar soluciones directas que le ahorren tiempo y dinero a las personas.
+                Ingeniero en Sistemas egresado de UTEL (Octubre 2026). Me dedico a construir programas útiles, automatizar tareas pesadas del día a día y desarrollar soluciones directas que le ahorren tiempo y dinero a las personas.
             </p>
 
             <!-- Botones principales -->
@@ -1318,13 +1388,13 @@
                         <!-- Galería de Capturas Interactivas -->
                         <div class="featured-gallery">
                             <div class="featured-gallery-item">
-                                <img src="imagenes/proyectos/danika-1.png" alt="Danika - Vista del Sistema 1" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x500/0a192f/f5f4ee?text=Danika+Panel+Principal'">
+                                <img src="imagenes/proyectos/danika-1.png" alt="Danika - Vista del Sistema 1" onclick="openDanikaGallery(0)" onerror="this.src='https://placehold.co/800x500/0a192f/f5f4ee?text=Danika+Panel+Principal'">
                             </div>
                             <div class="featured-gallery-item">
-                                <img src="imagenes/proyectos/danika-2.png" alt="Danika - Vista del Sistema 2" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x500/0a192f/f5f4ee?text=Danika+Editor+Skins'">
+                                <img src="imagenes/proyectos/danika-2.png" alt="Danika - Vista del Sistema 2" onclick="openDanikaGallery(1)" onerror="this.src='https://placehold.co/800x500/0a192f/f5f4ee?text=Danika+Editor+Skins'">
                             </div>
                             <div class="featured-gallery-item">
-                                <img src="imagenes/proyectos/danika-3.png" alt="Danika - Vista del Sistema 3" onclick="openSingleImage(this.src)" onerror="this.src='https://placehold.co/800x500/0a192f/f5f4ee?text=Danika+Sistema+Anti-Cheat'">
+                                <img src="imagenes/proyectos/danika-3.png" alt="Danika - Vista del Sistema 3" onclick="openDanikaGallery(2)" onerror="this.src='https://placehold.co/800x500/0a192f/f5f4ee?text=Danika+Sistema+Anti-Cheat'">
                             </div>
                         </div>
 
@@ -1561,7 +1631,7 @@
                     </div>
 
                     <div class="cert-preview-area" onclick="openLightboxPreview()">
-                        <img id="mainPreviewImg" src="imagenes/certificado-cemex.png" alt="Vista previa del certificado CEMEX" class="cert-preview-img" onerror="this.src='https://placehold.co/600x400/0a192f/f5f4ee?text=Certificado+CEMEX'">
+                        <img id="mainPreviewImg" src="imagenes/certificado-utel.png" alt="Vista previa del certificado UTEL" class="cert-preview-img" onerror="this.src='https://placehold.co/600x400/0a192f/f5f4ee?text=Certificado+UTEL'">
                     </div>
                 </div>
             </section>
@@ -1751,10 +1821,16 @@
     
     <!-- Modal Imagen Lightbox (Galería y Proyecto) -->
     <div id="imageModal" class="modal" onclick="closeModal('imageModal', event)">
-        <span class="close-btn" onclick="closeModal('imageModal', 'force')">&times;</span>
-        <span class="nav-btn prev-btn" id="prevBtn" onclick="navGallery(-1, event)">&#10094;</span>
+        <button class="close-btn-lightbox" onclick="closeModal('imageModal', 'force')" title="Cerrar vista previa" aria-label="Cerrar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <button class="nav-btn prev-btn" id="prevBtn" onclick="navGallery(-1, event)" title="Anterior" aria-label="Anterior">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
         <img class="modal-content" id="expandedImg" alt="Vista previa de imagen ampliada">
-        <span class="nav-btn next-btn" id="nextBtn" onclick="navGallery(1, event)">&#10095;</span>
+        <button class="nav-btn next-btn" id="nextBtn" onclick="navGallery(1, event)" title="Siguiente" aria-label="Siguiente">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
     </div>
 
     <!-- Modal Formulario -->
@@ -1786,13 +1862,13 @@
             <div id="resumeDocument" class="resume-document">
                 <div class="resume-header">
                     <h2>Shordy Simbaña</h2>
-                    <p>Desarrollador de Software | Estudiante Ing. en Sistemas</p>
+                    <p>Ingeniero en Sistemas</p>
                     <div class="resume-contact">
                         <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1d63ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> shordy46.58@gmail.com</span>
                         <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1d63ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> </span>
                         <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1d63ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> linkedin.com/in/shordy</span>
                         <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1d63ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> github.com/ShordyX</span>
-                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1d63ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> shordyea.github.io</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1d63ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> shordyx.github.io/Portafolio</span>
                     </div>
                 </div>
 
@@ -1800,24 +1876,24 @@
                     <div class="resume-column-left">
                         <div class="resume-section">
                             <h3>Perfil Profesional</h3>
-                            <p class="resume-item-desc">Para mí, una computadora es una aliada para resolver problemas cotidianos. Me gusta tomar ideas sueltas y convertirlas en herramientas digitales prácticas, que ahorren tiempo y funcionen sin rodeos.</p>
+                            <p class="resume-item-desc">Desarrollador de Software con enfoque en resolución de problemas complejos, automatización de sistemas e ingeniería de producto. Experiencia construyendo aplicaciones completas de escritorio y herramientas de datos con Python, lógica de bajo nivel y arquitecturas limpias. Proactivo, autónomo y orientado a la entrega de soluciones funcionales.</p>
                         </div>
                         
                         <div class="resume-section">
-                            <h3>Servicios y Tecnologías</h3>
+                            <h3>Habilidades y Tecnologías</h3>
                             <div class="resume-skills-grid">
                                 <div>
                                     <strong style="color: var(--accent); font-size: 0.9rem;">Especialidades:</strong>
                                     <ul class="resume-list">
-                                        <li>Desarrollo de Software Web</li>
-                                        <li>Automatización de Procesos</li>
-                                        <li>Integración de IA Práctica</li>
-                                        <li>Mantenimiento y Ajuste de Equipos</li>
+                                        <li>Arquitectura y Software de Escritorio</li>
+                                        <li>Automatización de Procesos y Scripts</li>
+                                        <li>Consumo e Integración de APIs REST</li>
+                                        <li>Manipulación de Binarios y Hashes</li>
                                     </ul>
                                 </div>
                                 <div>
                                     <strong style="color: var(--accent); font-size: 0.9rem;">Tecnologías:</strong>
-                                    <p class="resume-item-desc" style="margin-top: 4px;">HTML5, CSS3, Python, Linux, Windows OS, VS Code, Google Cloud, Microsoft 365, Google Gemini.</p>
+                                    <p class="resume-item-desc" style="margin-top: 4px;">Python, JavaScript / TypeScript, SQL (PostgreSQL / SQLite), Git, GitHub, APIs REST, Linux, Windows OS, Google Cloud.</p>
                                 </div>
                             </div>
                         </div>
@@ -1825,14 +1901,11 @@
                         <div class="resume-section">
                             <h3>Educación y Certificaciones</h3>
                             <ul class="resume-list" style="padding-left: 0; list-style: none;">
-                                <li style="margin-bottom: 4px;"><strong>Ing. en Sistemas Computacionales</strong><br><span style="color: var(--text-muted);">UTEL Universidad (Estudiante)</span></li>
+                                <li style="margin-bottom: 4px;"><strong>Ing. en Sistemas </strong><br><span style="color: var(--text-muted);">UTEL Universidad (Egresado - Octubre 2026)</span></li>
                                 <li style="margin-bottom: 4px;"><strong>Programa Empresarial CEMEX</strong><br><span style="color: var(--text-muted);">Centro de Innovación y Desarrollo (2026)</span></li>
                                 <li style="margin-bottom: 4px;"><strong>SEO para IA y Google</strong><br><span style="color: var(--text-muted);">BIG School / BIGSEO (2026)</span></li>
                                 <li style="margin-bottom: 4px;"><strong>Hackathon: Innovación E-commerce</strong><br><span style="color: var(--text-muted);">UTEL y Tiendanube (2026)</span></li>
-                                <li style="margin-bottom: 4px;"><strong>Informática Forense</strong><br><span style="color: var(--text-muted);">Academia Progenios (2025)</span></li>
-                                <li style="margin-bottom: 4px;"><strong>Customer Experience y Asistencia</strong><br><span style="color: var(--text-muted);">Remotos Academy / CertiProf (2025)</span></li>
-                                <li style="margin-bottom: 4px;"><strong>Intro. a Prótesis Biónicas</strong><br><span style="color: var(--text-muted);">P4H Bionics (2024)</span></li>
-                                <li><strong>Gestión de RAEE (Parte 1 y 2)</strong><br><span style="color: var(--text-muted);">Ministerio del Ambiente (2025)</span></li>
+                                <li><strong>Informática Forense</strong><br><span style="color: var(--text-muted);">Academia Progenios (2025)</span></li>
                             </ul>
                         </div>
                     </div>
@@ -1848,7 +1921,17 @@
                                     </div>
                                     <div class="resume-item-date">Presente</div>
                                 </div>
-                                <p class="resume-item-desc">Desarrollo de aplicaciones, automatización de tareas y creación de herramientas a medida.</p>
+                                <p class="resume-item-desc">Desarrollo de software de escritorio, flujos de automatización de datos y herramientas a medida mediante arquitecturas modulares.</p>
+                            </div>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <div>
+                                        <div class="resume-item-title">Analista de Datos Industrial / Desarrollador PoC</div>
+                                        <div class="resume-item-subtitle">Centro de Innovación y Desarrollo CEMEX</div>
+                                    </div>
+                                    <div class="resume-item-date">Ago 2026</div>
+                                </div>
+                                <p class="resume-item-desc">Análisis estadístico sobre 3,274 registros de formulación bajo norma ISO 9001 e implementación de prueba de concepto con visión por computadora para estimación volumétrica automatizada.</p>
                             </div>
                             <div class="resume-item">
                                 <div class="resume-item-header">
@@ -1858,17 +1941,7 @@
                                     </div>
                                     <div class="resume-item-date">Presente</div>
                                 </div>
-                                <p class="resume-item-desc">Desarrollo visual, integración de asistentes inteligentes y optimización de computadoras para clientes locales.</p>
-                            </div>
-                            <div class="resume-item">
-                                <div class="resume-item-header">
-                                    <div>
-                                        <div class="resume-item-title">Asistente de Archivo</div>
-                                        <div class="resume-item-subtitle">Ministerio del Ambiente (Jóvenes en Acción)</div>
-                                    </div>
-                                    <div class="resume-item-date">Feb 2025</div>
-                                </div>
-                                <p class="resume-item-desc">Trabajo con expedientes antiguos, aprendiendo a catalogar, ordenar y preservar documentos históricos con cuidado.</p>
+                                <p class="resume-item-desc">Desarrollo web, integración de APIs y asistentes inteligentes para la digitalización operativa de clientes locales.</p>
                             </div>
                         </div>
 
@@ -1878,26 +1951,27 @@
                                 <div class="resume-item-header">
                                     <div>
                                         <div class="resume-item-title">Danika</div>
-                                        <div class="resume-item-subtitle">Motor de Modding en Source 2 y Manejo de Recursos</div>
+                                        <div class="resume-item-subtitle">Software de Gestión y Modificación Local (Source 2)</div>
                                     </div>
                                     <div class="resume-item-date">Destacado</div>
                                 </div>
                                 <ul class="resume-list">
-                                    <li>Ingeniería en Source 2 para probar y cambiar skins de forma completamente local.</li>
-                                    <li>Flujo de trabajo seguro que no interfiere con partidas ni con la red del juego.</li>
+                                    <li>Ingeniería inversa de formatos propietarios y validación de integridad en el motor Source 2 de Valve.</li>
+                                    <li>Desarrollo de arquitectura modular de escritorio con procesamiento de archivos binarios, validación de firmas (.signatures) y manipulación de hashes.</li>
+                                    <li>Interfaz desacoplada y flujo automatizado para reemplazo en tiempo real de recursos y eventos de audio sin comprometer procesos protegidos.</li>
                                 </ul>
                             </div>
                             <div class="resume-item">
                                 <div class="resume-item-header">
                                     <div>
-                                        <div class="resume-item-title">CEMEX — Control y Prueba de Mezclas</div>
-                                        <div class="resume-item-subtitle">Análisis de Datos y Prueba de Visión por Computadora</div>
+                                        <div class="resume-item-title">Lyra Lazuli</div>
+                                        <div class="resume-item-subtitle">Launcher y Suite de Optimización en Windows</div>
                                     </div>
-                                    <div class="resume-item-date">Ago 2026</div>
+                                    <div class="resume-item-date">Reciente</div>
                                 </div>
                                 <ul class="resume-list">
-                                    <li>Análisis de 3,274 registros identificando desvíos de hasta 129 kg/m³ en cemento por temas de humedad.</li>
-                                    <li>Prueba funcional para estimar volumen de agregados con cámaras bajo normas ISO 9001.</li>
+                                    <li>Arquitectura de escritorio para gestión unificada de bibliotecas y automatización de respaldo de partidas en la nube.</li>
+                                    <li>Módulo de ajuste selectivo de servicios en segundo plano para reducción de latencia en Windows.</li>
                                 </ul>
                             </div>
                             <div class="resume-item">
@@ -1909,8 +1983,8 @@
                                     <div class="resume-item-date">Reciente</div>
                                 </div>
                                 <ul class="resume-list">
-                                    <li>Envíos organizados en WhatsApp Web sin depender de pagos por API oficial.</li>
-                                    <li>Tiempos variables entre mensajes para cuidar la cuenta y mandar fotos y textos juntos.</li>
+                                    <li>Automatización sobre WhatsApp Web sin dependencias de API oficiales de costo recurrente.</li>
+                                    <li>Algoritmo de intervalos aleatorios y simulación de tipeo para protección de cuentas ante bloqueos.</li>
                                 </ul>
                             </div>
                             <div class="resume-item">
@@ -1924,18 +1998,6 @@
                                 <ul class="resume-list">
                                     <li>Coordinación del equipo técnico y diseño del prototipo funcional a tiempo.</li>
                                     <li>Estructura de "NubIA", asistente pensado para guiar a nuevos emprendedores.</li>
-                                </ul>
-                            </div>
-                            <div class="resume-item">
-                                <div class="resume-item-header">
-                                    <div>
-                                        <div class="resume-item-title">Digitalización Histórica - MAATE</div>
-                                        <div class="resume-item-subtitle">Gestión de Datos y Archivo</div>
-                                    </div>
-                                    <div class="resume-item-date">Proyecto (4 meses)</div>
-                                </div>
-                                <ul class="resume-list">
-                                    <li>Rescate y orden de expedientes patrimoniales en bases de datos digitales.</li>
                                 </ul>
                             </div>
                         </div>
@@ -2046,8 +2108,29 @@
             }
         }
 
-        // === LIGHTBOX (Para proyectos individuales sin flechas) ===
+        // === GESTIÓN UNIVERSAL DE GALERÍAS EN LIGHTBOX ===
+        let activeGalleryList = [];
+        const danikaImages = [
+            'imagenes/proyectos/danika-1.png',
+            'imagenes/proyectos/danika-2.png',
+            'imagenes/proyectos/danika-3.png'
+        ];
+
+        function openDanikaGallery(index) {
+            activeGalleryList = danikaImages;
+            currentGalleryIndex = index;
+            const modal = document.getElementById('imageModal');
+            const img = document.getElementById('expandedImg');
+            img.src = activeGalleryList[currentGalleryIndex];
+            img.onerror = () => { img.src = 'https://placehold.co/800x500/0a192f/f5f4ee?text=Danika+Vista+' + (currentGalleryIndex + 1); };
+            document.getElementById('prevBtn').style.display = 'flex';
+            document.getElementById('nextBtn').style.display = 'flex';
+            modal.classList.add('active');
+        }
+
         function openSingleImage(src) {
+            activeGalleryList = [src];
+            currentGalleryIndex = 0;
             const modal = document.getElementById('imageModal');
             const img = document.getElementById('expandedImg');
             img.src = src;
@@ -2058,37 +2141,32 @@
 
         // === LIGHTBOX CON NAVEGACIÓN (Para certificados) ===
         function openGallery(element) {
+            activeGalleryList = certItems.map(item => item.getAttribute('data-img'));
             currentGalleryIndex = certItems.indexOf(element);
-            const src = element.getAttribute('data-img');
             const modal = document.getElementById('imageModal');
             const img = document.getElementById('expandedImg');
-            img.src = src;
-            document.getElementById('prevBtn').style.display = 'block';
-            document.getElementById('nextBtn').style.display = 'block';
+            img.src = activeGalleryList[currentGalleryIndex];
+            document.getElementById('prevBtn').style.display = 'flex';
+            document.getElementById('nextBtn').style.display = 'flex';
             modal.classList.add('active');
         }
 
         function openLightboxPreview() {
             const activeItem = document.querySelector('.cert-item.active');
-            currentGalleryIndex = certItems.indexOf(activeItem);
-            
-            const modal = document.getElementById('imageModal');
-            const img = document.getElementById('expandedImg');
-            img.src = previewImg.src;
-            document.getElementById('prevBtn').style.display = 'block';
-            document.getElementById('nextBtn').style.display = 'block';
-            modal.classList.add('active');
+            if (activeItem) openGallery(activeItem);
         }
 
         function navGallery(direction, event) {
             event.stopPropagation();
+            if (!activeGalleryList || activeGalleryList.length <= 1) return;
             currentGalleryIndex += direction;
             
-            if (currentGalleryIndex < 0) currentGalleryIndex = certItems.length - 1;
-            if (currentGalleryIndex >= certItems.length) currentGalleryIndex = 0;
+            if (currentGalleryIndex < 0) currentGalleryIndex = activeGalleryList.length - 1;
+            if (currentGalleryIndex >= activeGalleryList.length) currentGalleryIndex = 0;
             
-            const newSrc = certItems[currentGalleryIndex].getAttribute('data-img');
-            document.getElementById('expandedImg').src = newSrc;
+            const newSrc = activeGalleryList[currentGalleryIndex];
+            const img = document.getElementById('expandedImg');
+            img.src = newSrc;
         }
 
         // === MODALES GENÉRICOS ===
@@ -2130,16 +2208,16 @@
                 prevY: -9999,
                 vx: 0,
                 vy: 0,
-                radius: 190
+                radius: 240,
+                ringRadius: 95
             };
 
-            // Tonos sutiles y translúcidos que no compiten con la tipografía
             const colors = [
-                'rgba(29, 99, 255, 0.45)',
-                'rgba(29, 99, 255, 0.25)',
-                'rgba(10, 25, 47, 0.18)',
-                'rgba(10, 25, 47, 0.10)',
-                'rgba(29, 99, 255, 0.35)'
+                'rgba(29, 99, 255, 0.26)',
+                'rgba(29, 99, 255, 0.18)',
+                'rgba(10, 25, 47, 0.25)',
+                'rgba(29, 99, 255, 0.20)',
+                'rgba(10, 25, 47, 0.25)'
             ];
 
             function resize() {
@@ -2155,8 +2233,7 @@
 
             function createParticles() {
                 particles = [];
-                // Mayor separación para un fondo aireado y limpio
-                const spacing = Math.max(68, Math.min(88, Math.floor(Math.sqrt((width * height) / 180))));
+                const spacing = Math.max(46, Math.min(54, Math.floor(Math.sqrt((width * height) / 380))));
                 const cols = Math.ceil(width / spacing);
                 const rows = Math.ceil(height / spacing);
                 const centerX = width / 2;
@@ -2164,8 +2241,8 @@
 
                 for (let r = 0; r < rows; r++) {
                     for (let c = 0; c < cols; c++) {
-                        const jitterX = (Math.random() - 0.5) * (spacing * 0.7);
-                        const jitterY = (Math.random() - 0.5) * (spacing * 0.7);
+                        const jitterX = (Math.random() - 0.5) * (spacing * 0.6);
+                        const jitterY = (Math.random() - 0.5) * (spacing * 0.6);
                         const originX = c * spacing + spacing / 2 + jitterX;
                         const originY = r * spacing + spacing / 2 + jitterY;
 
@@ -2174,8 +2251,8 @@
                         const distFromCenter = Math.sqrt(dx * dx + dy * dy);
 
                         const baseAngle = Math.atan2(dy, dx) + (Math.PI / 4) * (distFromCenter / Math.max(width, height));
-                        const length = 5 + Math.random() * 4;
-                        const thickness = 1.4 + Math.random() * 0.6;
+                        const length = 5.0 + Math.random() * 3.5;
+                        const thickness = 1.2 + Math.random() * 0.3;
                         const color = colors[Math.floor(Math.random() * colors.length)];
 
                         particles.push({
@@ -2191,7 +2268,7 @@
                             baseAngle: baseAngle,
                             angle: baseAngle,
                             floatOffset: Math.random() * Math.PI * 2,
-                            floatSpeed: 0.01 + Math.random() * 0.015
+                            floatSpeed: 0.004 + Math.random() * 0.006
                         });
                     }
                 }
@@ -2199,12 +2276,16 @@
 
             window.addEventListener('resize', resize);
             window.addEventListener('mousemove', function(e) {
-                mouse.vx = e.clientX - mouse.prevX;
-                mouse.vy = e.clientY - mouse.prevY;
-                mouse.prevX = e.clientX;
-                mouse.prevY = e.clientY;
-                mouse.x = e.clientX;
-                mouse.y = e.clientY;
+                const currentScroll = window.scrollY || window.pageYOffset || 0;
+                const pageX = e.pageX !== undefined ? e.pageX : (e.clientX + window.scrollX);
+                const pageY = e.pageY !== undefined ? e.pageY : (e.clientY + currentScroll);
+                
+                mouse.vx = (pageX - mouse.prevX) * 0.5;
+                mouse.vy = (pageY - mouse.prevY) * 0.5;
+                mouse.prevX = pageX;
+                mouse.prevY = pageY;
+                mouse.x = pageX;
+                mouse.y = pageY;
             });
 
             window.addEventListener('mouseleave', function() {
@@ -2213,6 +2294,12 @@
             });
 
             function animate() {
+                const scrollY = window.scrollY || window.pageYOffset || 0;
+                if (scrollY > height) {
+                    requestAnimationFrame(animate);
+                    return;
+                }
+
                 ctx.clearRect(0, 0, width, height);
 
                 const count = particles.length;
@@ -2221,41 +2308,49 @@
 
                     const homeDx = p.originX - p.x;
                     const homeDy = p.originY - p.y;
-                    p.vx += homeDx * 0.035;
-                    p.vy += homeDy * 0.035;
+                    p.vx += homeDx * 0.022;
+                    p.vy += homeDy * 0.022;
 
                     p.floatOffset += p.floatSpeed;
-                    p.vx += Math.cos(p.floatOffset) * 0.03;
-                    p.vy += Math.sin(p.floatOffset) * 0.03;
+                    p.vx += Math.cos(p.floatOffset) * 0.012;
+                    p.vy += Math.sin(p.floatOffset) * 0.012;
 
-                    const mouseDx = p.x - mouse.x;
-                    const mouseDy = p.y - mouse.y;
-                    const mouseDist = Math.sqrt(mouseDx * mouseDx + mouseDy * mouseDy);
+                    const toMouseX = mouse.x - p.x;
+                    const toMouseY = mouse.y - p.y;
+                    const mouseDist = Math.sqrt(toMouseX * toMouseX + toMouseY * toMouseY);
 
                     if (mouseDist < mouse.radius && mouseDist > 0.001) {
-                        const factor = (1 - mouseDist / mouse.radius);
-                        const force = factor * factor * 12;
-                        const nx = mouseDx / mouseDist;
-                        const ny = mouseDy / mouseDist;
+                        const influence = Math.pow(1 - mouseDist / mouse.radius, 1.8);
+                        const deltaDist = mouseDist - mouse.ringRadius;
+                        const nx = toMouseX / mouseDist;
+                        const ny = toMouseY / mouseDist;
 
-                        p.vx += nx * force;
-                        p.vy += ny * force;
+                        const springForce = deltaDist * influence * 0.045;
+                        p.vx += nx * springForce;
+                        p.vy += ny * springForce;
 
-                        p.vx += mouse.vx * factor * 0.2;
-                        p.vy += mouse.vy * factor * 0.2;
+                        p.vx += -ny * influence * 0.15;
+                        p.vy += nx * influence * 0.15;
+
+                        p.vx += mouse.vx * influence * 0.12;
+                        p.vy += mouse.vy * influence * 0.12;
+
+                        const ringTangent = Math.atan2(toMouseY, toMouseX) + Math.PI / 2;
+                        let diffAngle = ringTangent - p.angle;
+                        while (diffAngle < -Math.PI) diffAngle += Math.PI * 2;
+                        while (diffAngle > Math.PI) diffAngle -= Math.PI * 2;
+                        p.angle += diffAngle * (0.08 * influence + 0.02);
+                    } else {
+                        let diffAngle = p.baseAngle - p.angle;
+                        while (diffAngle < -Math.PI) diffAngle += Math.PI * 2;
+                        while (diffAngle > Math.PI) diffAngle -= Math.PI * 2;
+                        p.angle += diffAngle * 0.025;
                     }
 
-                    p.vx *= 0.88;
-                    p.vy *= 0.88;
+                    p.vx *= 0.90;
+                    p.vy *= 0.90;
                     p.x += p.vx;
                     p.y += p.vy;
-
-                    const speed = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
-                    if (speed > 0.15) {
-                        p.angle = Math.atan2(p.vy, p.vx);
-                    } else {
-                        p.angle += (p.baseAngle - p.angle) * 0.05;
-                    }
 
                     ctx.save();
                     ctx.translate(p.x, p.y);
